@@ -1,0 +1,2420 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "SpyPen"
+Date "2021-02-08"
+Rev "v01"
+Comp ""
+Comment1 ""
+Comment2 "creativecommons.org/licenses/by/4.0/"
+Comment3 "License: CC BY 4.0"
+Comment4 "Author: Jakub Sencak"
+$EndDescr
+Wire Wire Line
+	5050 2150 5050 2200
+$Comp
+L power:GND #PWR033
+U 1 1 6074EBB3
+P 7500 1850
+F 0 "#PWR033" H 7500 1600 50  0001 C CNN
+F 1 "GND" V 7505 1722 50  0000 R CNN
+F 2 "" H 7500 1850 50  0001 C CNN
+F 3 "" H 7500 1850 50  0001 C CNN
+	1    7500 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR056
+U 1 1 601230CB
+P 13900 4450
+F 0 "#PWR056" H 13900 4300 50  0001 C CNN
+F 1 "+3V3" H 13915 4623 50  0000 C CNN
+F 2 "" H 13900 4450 50  0001 C CNN
+F 3 "" H 13900 4450 50  0001 C CNN
+	1    13900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR057
+U 1 1 6013AD0F
+P 13900 5100
+F 0 "#PWR057" H 13900 4850 50  0001 C CNN
+F 1 "GND" H 13905 4927 50  0000 C CNN
+F 2 "" H 13900 5100 50  0001 C CNN
+F 3 "" H 13900 5100 50  0001 C CNN
+	1    13900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR065
+U 1 1 601B5656
+P 15100 6100
+F 0 "#PWR065" H 15100 5850 50  0001 C CNN
+F 1 "GND" H 15105 5927 50  0000 C CNN
+F 2 "" H 15100 6100 50  0001 C CNN
+F 3 "" H 15100 6100 50  0001 C CNN
+	1    15100 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15000 5850 15100 5850
+Wire Wire Line
+	15100 5850 15100 5900
+Wire Wire Line
+	14300 5150 14600 5150
+Text Notes 12000 4250 0    79   ~ 0
+Analog section
+Text Notes 4500 1150 0    50   ~ 0
+USB connector
+Wire Wire Line
+	5350 1550 5450 1550
+Wire Wire Line
+	4950 2150 4950 2200
+Wire Wire Line
+	4950 2200 5050 2200
+Connection ~ 5050 2200
+Wire Wire Line
+	5050 2200 5050 2250
+$Comp
+L Device:C_Small C14
+U 1 1 60610CAA
+P 6850 3200
+F 0 "C14" H 6942 3246 50  0000 L CNN
+F 1 "10n" H 6942 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6850 3200 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Murata-Electronics/GCB155M91A103KE01D/?qs=rrS6PyfT74f9uJD9nibAXg%3D%3D" H 6850 3200 50  0001 C CNN
+F 4 "https://www.mouser.sk/ProductDetail/Murata-Electronics/GCB155M91A103KE01D/?qs=rrS6PyfT74f9uJD9nibAXg%3D%3D" H 6850 3200 50  0001 C CNN "Buy"
+	1    6850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3050 6850 3050
+Wire Wire Line
+	6850 3050 6850 3100
+$Comp
+L power:GND #PWR031
+U 1 1 60620606
+P 6850 3400
+F 0 "#PWR031" H 6850 3150 50  0001 C CNN
+F 1 "GND" V 6855 3272 50  0000 R CNN
+F 2 "" H 6850 3400 50  0001 C CNN
+F 3 "" H 6850 3400 50  0001 C CNN
+	1    6850 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3300 6850 3400
+$Comp
+L Device:C_Small C15
+U 1 1 6062F54A
+P 7200 3200
+F 0 "C15" H 7292 3246 50  0000 L CNN
+F 1 "100n" H 7292 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7200 3200 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/AVX/04026D104KAT2A/?qs=LLG2yGGJ5NhILwMziGI8Xg%3D%3D" H 7200 3200 50  0001 C CNN
+F 4 "https://www.mouser.sk/ProductDetail/AVX/04026D104KAT2A/?qs=LLG2yGGJ5NhILwMziGI8Xg%3D%3D" H 7200 3200 50  0001 C CNN "Buy"
+	1    7200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2950 7200 3100
+Connection ~ 7200 2950
+Wire Wire Line
+	6750 2950 7200 2950
+$Comp
+L power:GND #PWR032
+U 1 1 6064FCF9
+P 7200 3400
+F 0 "#PWR032" H 7200 3150 50  0001 C CNN
+F 1 "GND" V 7205 3272 50  0000 R CNN
+F 2 "" H 7200 3400 50  0001 C CNN
+F 3 "" H 7200 3400 50  0001 C CNN
+	1    7200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 6065EFE0
+P 7550 3200
+F 0 "C16" H 7642 3246 50  0000 L CNN
+F 1 "1u" H 7642 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7550 3200 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Taiyo-Yuden/LMK105BJ105MVHF/?qs=sBf%2Fb4nBSlfFq2d5eQRmhw%3D%3D" H 7550 3200 50  0001 C CNN
+	1    7550 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2950 7550 2950
+Wire Wire Line
+	7550 2950 7550 3100
+Wire Wire Line
+	7200 3300 7200 3400
+$Comp
+L power:GND #PWR035
+U 1 1 6067E15D
+P 7550 3400
+F 0 "#PWR035" H 7550 3150 50  0001 C CNN
+F 1 "GND" V 7555 3272 50  0000 R CNN
+F 2 "" H 7550 3400 50  0001 C CNN
+F 3 "" H 7550 3400 50  0001 C CNN
+	1    7550 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3300 7550 3400
+Text GLabel 7500 1750 2    50   Input ~ 0
+USB_D+
+Text GLabel 7500 1950 2    50   Input ~ 0
+USB_D-
+$Comp
+L power:+3V3 #PWR017
+U 1 1 600B0F9F
+P 2950 5600
+F 0 "#PWR017" H 2950 5450 50  0001 C CNN
+F 1 "+3V3" H 2965 5773 50  0000 C CNN
+F 2 "" H 2950 5600 50  0001 C CNN
+F 3 "" H 2950 5600 50  0001 C CNN
+	1    2950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 600D2AAF
+P 1750 5550
+F 0 "FB1" H 1850 5596 50  0000 L CNN
+F 1 "BLM15AX601SN1D" H 1850 5505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1680 5550 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/KEMET/Z0805C601BSMST/?qs=v1sh8PPj49jmDD01hjhyZg==" H 1750 5550 50  0001 C CNN
+	1    1750 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 600ECFD9
+P 1750 5800
+F 0 "C5" H 1842 5846 50  0000 L CNN
+F 1 "100n" H 1842 5755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1750 5800 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0402JRX7R8BB104/?qs=tS%2FAHvPQ%2F56C6Jcuby2Lxg%3D%3D" H 1750 5800 50  0001 C CNN
+	1    1750 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR010
+U 1 1 600EE1DD
+P 1750 5400
+F 0 "#PWR010" H 1750 5250 50  0001 C CNN
+F 1 "+3V3" H 1765 5573 50  0000 C CNN
+F 2 "" H 1750 5400 50  0001 C CNN
+F 3 "" H 1750 5400 50  0001 C CNN
+	1    1750 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 600F5B3F
+P 1750 5900
+F 0 "#PWR011" H 1750 5650 50  0001 C CNN
+F 1 "GND" H 1755 5727 50  0000 C CNN
+F 2 "" H 1750 5900 50  0001 C CNN
+F 3 "" H 1750 5900 50  0001 C CNN
+	1    1750 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 6017CF6C
+P 1250 6350
+F 0 "C2" H 1342 6396 50  0000 L CNN
+F 1 "100p" H 1342 6305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1250 6350 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/AVX/04026C101KAT2A/?qs=nyfP64xlqc%2FN9ABjcoge4g%3D%3D" H 1250 6350 50  0001 C CNN
+	1    1250 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6200 1250 6250
+Wire Wire Line
+	900  6200 900  6250
+Wire Wire Line
+	900  6200 1250 6200
+$Comp
+L power:+3V3 #PWR03
+U 1 1 60194C4A
+P 900 6050
+F 0 "#PWR03" H 900 5900 50  0001 C CNN
+F 1 "+3V3" H 915 6223 50  0000 C CNN
+F 2 "" H 900 6050 50  0001 C CNN
+F 3 "" H 900 6050 50  0001 C CNN
+	1    900  6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 6017EAA0
+P 1050 6500
+F 0 "#PWR04" H 1050 6250 50  0001 C CNN
+F 1 "GND" H 1055 6327 50  0000 C CNN
+F 2 "" H 1050 6500 50  0001 C CNN
+F 3 "" H 1050 6500 50  0001 C CNN
+	1    1050 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 6017C421
+P 900 6350
+F 0 "C1" H 992 6396 50  0000 L CNN
+F 1 "100n" H 992 6305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 900 6350 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0402JRX7R8BB104/?qs=tS%2FAHvPQ%2F56C6Jcuby2Lxg%3D%3D" H 900 6350 50  0001 C CNN
+	1    900  6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 601D1280
+P 2950 6800
+F 0 "#PWR018" H 2950 6550 50  0001 C CNN
+F 1 "GND" H 2955 6627 50  0000 C CNN
+F 2 "" H 2950 6800 50  0001 C CNN
+F 3 "" H 2950 6800 50  0001 C CNN
+	1    2950 6800
+	1    0    0    -1  
+$EndComp
+Connection ~ 900  6200
+Wire Wire Line
+	900  6050 900  6200
+$Comp
+L Device:C_Small C6
+U 1 1 601EED55
+P 2150 6850
+F 0 "C6" H 2242 6896 50  0000 L CNN
+F 1 "100n" H 2242 6805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2150 6850 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0402JRX7R8BB104/?qs=tS%2FAHvPQ%2F56C6Jcuby2Lxg%3D%3D" H 2150 6850 50  0001 C CNN
+	1    2150 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR012
+U 1 1 601EFDD1
+P 2150 6700
+F 0 "#PWR012" H 2150 6550 50  0001 C CNN
+F 1 "+3V3" H 2165 6873 50  0000 C CNN
+F 2 "" H 2150 6700 50  0001 C CNN
+F 3 "" H 2150 6700 50  0001 C CNN
+	1    2150 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6700 2150 6750
+$Comp
+L power:GND #PWR013
+U 1 1 601F1395
+P 2150 7000
+F 0 "#PWR013" H 2150 6750 50  0001 C CNN
+F 1 "GND" H 2155 6827 50  0000 C CNN
+F 2 "" H 2150 7000 50  0001 C CNN
+F 3 "" H 2150 7000 50  0001 C CNN
+	1    2150 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6950 2150 7000
+Wire Wire Line
+	2350 6400 2350 6750
+Connection ~ 2150 6750
+$Comp
+L power:GND #PWR08
+U 1 1 6029015A
+P 1500 7000
+F 0 "#PWR08" H 1500 6750 50  0001 C CNN
+F 1 "GND" H 1505 6827 50  0000 C CNN
+F 2 "" H 1500 7000 50  0001 C CNN
+F 3 "" H 1500 7000 50  0001 C CNN
+	1    1500 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6750 2150 6750
+$Comp
+L power:GND #PWR038
+U 1 1 601EEDE1
+P 8950 9000
+F 0 "#PWR038" H 8950 8750 50  0001 C CNN
+F 1 "GND" H 8955 8827 50  0000 C CNN
+F 2 "" H 8950 9000 50  0001 C CNN
+F 3 "" H 8950 9000 50  0001 C CNN
+	1    8950 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C18
+U 1 1 6020E633
+P 9200 7550
+F 0 "C18" H 9292 7596 50  0000 L CNN
+F 1 "4p3" H 9292 7505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9200 7550 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/KEMET/C0402C439B5GACTU/?qs=sGAEpiMZZMuMW9TJLBQkXtQELi8n00gZ9Z2MeBGZChc%3D" H 9200 7550 50  0001 C CNN
+	1    9200 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 6021767A
+P 8750 7550
+F 0 "C17" H 8842 7596 50  0000 L CNN
+F 1 "4p3" H 8842 7505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8750 7550 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/KEMET/C0402C439B5GACTU/?qs=sGAEpiMZZMuMW9TJLBQkXtQELi8n00gZ9Z2MeBGZChc%3D" H 8750 7550 50  0001 C CNN
+	1    8750 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 6021825A
+P 8750 7650
+F 0 "#PWR036" H 8750 7400 50  0001 C CNN
+F 1 "GND" H 8755 7477 50  0000 C CNN
+F 2 "" H 8750 7650 50  0001 C CNN
+F 3 "" H 8750 7650 50  0001 C CNN
+	1    8750 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR039
+U 1 1 60218DCC
+P 9200 7650
+F 0 "#PWR039" H 9200 7400 50  0001 C CNN
+F 1 "GND" H 9205 7477 50  0000 C CNN
+F 2 "" H 9200 7650 50  0001 C CNN
+F 3 "" H 9200 7650 50  0001 C CNN
+	1    9200 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_Small Y2
+U 1 1 6021D79C
+P 9000 7350
+F 0 "Y2" H 9000 7125 50  0000 C CNN
+F 1 "NX2012SA-32768K" H 9000 7216 50  0000 C CNN
+F 2 "0Pretty:Crystal_2012_custom" H 9000 7350 50  0001 C CNN
+F 3 "https://cz.mouser.com/ProductDetail/NDK/NX2012SA-32768K-STD-MUB-1/?qs=55YtniHzbhA%252B6%2Fl1MwFZaQ==" H 9000 7350 50  0001 C CNN
+	1    9000 7350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 7350 8750 7350
+Wire Wire Line
+	8750 7350 8750 7450
+Wire Wire Line
+	9100 7350 9200 7350
+Wire Wire Line
+	9200 7350 9200 7400
+Wire Wire Line
+	9400 6900 8750 6900
+Wire Wire Line
+	8750 6900 8750 7350
+Connection ~ 8750 7350
+Wire Wire Line
+	9400 7000 9400 7400
+Wire Wire Line
+	9400 7400 9200 7400
+Connection ~ 9200 7400
+Wire Wire Line
+	9200 7400 9200 7450
+NoConn ~ 2600 7950
+NoConn ~ 2600 8950
+NoConn ~ 2600 8850
+NoConn ~ 2600 8750
+NoConn ~ 2600 8250
+NoConn ~ 2600 8150
+NoConn ~ 2600 9850
+NoConn ~ 2600 9950
+NoConn ~ 2600 10050
+$Comp
+L Device:R_Small R4
+U 1 1 602B44C3
+P 9300 9500
+F 0 "R4" H 9359 9546 50  0000 L CNN
+F 1 "10K" H 9359 9455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9300 9500 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Vishay-Dale/CRCW040210K0FKEDC/?qs=E3Y5ESvWgWPiNLcGzwCGPg%3D%3D" H 9300 9500 50  0001 C CNN
+	1    9300 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 9350 9300 9400
+$Comp
+L power:GND #PWR040
+U 1 1 602C3BA2
+P 9300 9650
+F 0 "#PWR040" H 9300 9400 50  0001 C CNN
+F 1 "GND" H 9305 9477 50  0000 C CNN
+F 2 "" H 9300 9650 50  0001 C CNN
+F 3 "" H 9300 9650 50  0001 C CNN
+	1    9300 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 9600 9300 9650
+Wire Wire Line
+	9450 8400 9450 9050
+Wire Wire Line
+	9800 8400 10050 8400
+Wire Wire Line
+	9800 8400 9800 8450
+Connection ~ 9800 8400
+$Comp
+L Device:C_Small C19
+U 1 1 603185B1
+P 9800 8550
+F 0 "C19" H 9892 8596 50  0000 L CNN
+F 1 "100n" H 9892 8505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9800 8550 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0402JRX7R8BB104/?qs=tS%2FAHvPQ%2F56C6Jcuby2Lxg%3D%3D" H 9800 8550 50  0001 C CNN
+	1    9800 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 8350 9800 8400
+Text GLabel 10350 8400 2    50   Input ~ 0
+NRST
+Wire Wire Line
+	9800 8100 9800 8150
+$Comp
+L power:+3V3 #PWR041
+U 1 1 6033DE6F
+P 9800 8100
+F 0 "#PWR041" H 9800 7950 50  0001 C CNN
+F 1 "+3V3" H 9815 8273 50  0000 C CNN
+F 2 "" H 9800 8100 50  0001 C CNN
+F 3 "" H 9800 8100 50  0001 C CNN
+	1    9800 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAT54J D2
+U 1 1 60339DB4
+P 10200 8400
+F 0 "D2" H 10200 8183 50  0000 C CNN
+F 1 "BAT54J" H 10200 8274 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 10200 8225 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf" H 10200 8400 50  0001 C CNN
+F 4 "https://www.mouser.sk/ProductDetail/Vishay-Semiconductors/BAT54W-HE3-08/?qs=ESFF34UzhwicvMTEyztCgA%3D%3D" H 10200 8400 50  0001 C CNN "Buy"
+	1    10200 8400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR042
+U 1 1 603197B3
+P 9800 8650
+F 0 "#PWR042" H 9800 8400 50  0001 C CNN
+F 1 "GND" H 9805 8477 50  0000 C CNN
+F 2 "" H 9800 8650 50  0001 C CNN
+F 3 "" H 9800 8650 50  0001 C CNN
+	1    9800 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 602F8FBD
+P 9800 8250
+F 0 "R5" H 9859 8296 50  0000 L CNN
+F 1 "100K" H 9859 8205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9800 8250 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Welwyn-Components-TT-Electronics/WCR0402-100KFA/?qs=%2Fha2pyFaduhPlylfbvJy6ar93DMzWeQbkIrpOvswXaUoZ0xMVRPNhw%3D%3D" H 9800 8250 50  0001 C CNN
+	1    9800 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 8400 9800 8400
+Wire Wire Line
+	900  6450 900  6500
+Wire Wire Line
+	1250 6450 1250 6500
+Wire Wire Line
+	1050 6500 900  6500
+Connection ~ 1050 6500
+Wire Wire Line
+	1050 6500 1250 6500
+Text GLabel 6100 10300 2    50   Input ~ 0
+RF1
+Text GLabel 2600 8050 0    50   Input ~ 0
+SPI_SCK
+Text GLabel 2600 8550 0    50   Input ~ 0
+SPI_MISO
+Text GLabel 2600 9050 0    50   Input ~ 0
+USB_D-
+Text GLabel 2600 9150 0    50   Input ~ 0
+USB_D+
+Text GLabel 2600 8650 0    50   Input ~ 0
+SPI_MOSI
+Wire Wire Line
+	2150 6100 2950 6100
+Connection ~ 1250 6200
+Wire Wire Line
+	1250 6200 2950 6200
+Wire Wire Line
+	1700 6300 2950 6300
+Wire Wire Line
+	2350 6400 2950 6400
+Text Notes 4700 9925 0    50   ~ 0
+RF Bluetooth antenna
+Wire Wire Line
+	9050 8850 9150 8850
+Wire Wire Line
+	9150 8850 9150 9150
+Wire Wire Line
+	9150 9150 9450 9150
+Wire Wire Line
+	8850 8850 8750 8850
+Wire Wire Line
+	8750 8850 8750 9250
+Wire Wire Line
+	8750 9250 9450 9250
+Wire Wire Line
+	8950 8950 8950 9000
+Text Notes 800  4500 0    50   ~ 0
+Supply domain
+Wire Notes Line
+	11550 11000 8250 11000
+Text Notes 8350 6200 0    50   ~ 0
+Oscilator section 32MHz and 32768 kHz crystals\nBoot pin for loading booloader and NReset pin
+$Comp
+L Device:R_Small R2
+U 1 1 60224568
+P 1400 10450
+F 0 "R2" H 1459 10496 50  0000 L CNN
+F 1 "10K" H 1459 10405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1400 10450 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Vishay-Dale/CRCW040210K0FKEDC/?qs=E3Y5ESvWgWPiNLcGzwCGPg%3D%3D" H 1400 10450 50  0001 C CNN
+	1    1400 10450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 6022456E
+P 1650 10450
+F 0 "R3" H 1709 10496 50  0000 L CNN
+F 1 "10K" H 1709 10405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1650 10450 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Vishay-Dale/CRCW040210K0FKEDC/?qs=E3Y5ESvWgWPiNLcGzwCGPg%3D%3D" H 1650 10450 50  0001 C CNN
+	1    1650 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 10200 1400 10250
+Connection ~ 1400 10250
+Wire Wire Line
+	1400 10250 1400 10350
+Wire Wire Line
+	1650 10250 1650 10350
+Wire Wire Line
+	1400 10250 1650 10250
+Wire Wire Line
+	1250 10750 1400 10750
+Wire Wire Line
+	1250 10650 1650 10650
+Wire Wire Line
+	1400 10550 1400 10750
+Connection ~ 1400 10750
+Wire Wire Line
+	1650 10550 1650 10650
+Connection ~ 1650 10650
+Text Notes 800  7750 0    50   ~ 0
+Pin setup for USB and peripherals
+Connection ~ 5700 9000
+Wire Wire Line
+	5700 9000 5700 9100
+$Comp
+L power:GND #PWR028
+U 1 1 602ECDBB
+P 5700 9350
+F 0 "#PWR028" H 5700 9100 50  0001 C CNN
+F 1 "GND" H 5705 9177 50  0000 C CNN
+F 2 "" H 5700 9350 50  0001 C CNN
+F 3 "" H 5700 9350 50  0001 C CNN
+	1    5700 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 8700 6450 8700
+NoConn ~ 6500 8400
+NoConn ~ 6500 8300
+Text GLabel 6500 8500 0    50   Input ~ 0
+RF1
+Wire Wire Line
+	5700 9300 5700 9350
+$Comp
+L Device:C_Small C13
+U 1 1 603624B6
+P 5700 9200
+F 0 "C13" H 5792 9246 50  0000 L CNN
+F 1 "4u7" H 5792 9155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5700 9200 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Murata-Electronics/GRT155C80J475ME13D/?qs=rrS6PyfT74fcISTT255Zog%3D%3D" H 5700 9200 50  0001 C CNN
+	1    5700 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR022
+U 1 1 6019707D
+P 4800 8900
+F 0 "#PWR022" H 4800 8750 50  0001 C CNN
+F 1 "+3V3" H 4815 9073 50  0000 C CNN
+F 2 "" H 4800 8900 50  0001 C CNN
+F 3 "" H 4800 8900 50  0001 C CNN
+	1    4800 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 8900 4800 9000
+Wire Wire Line
+	5700 8600 5700 9000
+Wire Wire Line
+	6450 8700 6450 9000
+Text Notes 4650 8150 0    50   ~ 0
+SMPS and RF section 
+Connection ~ 3100 2700
+Wire Wire Line
+	3500 2700 3100 2700
+Wire Wire Line
+	3500 2350 3500 2700
+$Comp
+L power:GND #PWR019
+U 1 1 601009C1
+P 3100 2700
+F 0 "#PWR019" H 3100 2450 50  0001 C CNN
+F 1 "GND" H 3105 2527 50  0000 C CNN
+F 2 "" H 3100 2700 50  0001 C CNN
+F 3 "" H 3100 2700 50  0001 C CNN
+	1    3100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 6010066F
+P 2450 2450
+F 0 "#PWR014" H 2450 2200 50  0001 C CNN
+F 1 "GND" H 2455 2277 50  0000 C CNN
+F 2 "" H 2450 2450 50  0001 C CNN
+F 3 "" H 2450 2450 50  0001 C CNN
+	1    2450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 6010037F
+P 1650 2400
+F 0 "#PWR09" H 1650 2150 50  0001 C CNN
+F 1 "GND" H 1655 2227 50  0000 C CNN
+F 2 "" H 1650 2400 50  0001 C CNN
+F 3 "" H 1650 2400 50  0001 C CNN
+	1    1650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1550 2850 1950
+Wire Wire Line
+	2350 1550 2850 1550
+Wire Wire Line
+	1800 1550 2050 1550
+Wire Wire Line
+	1650 1950 1800 1950
+Wire Wire Line
+	1800 1950 1950 1950
+Connection ~ 1800 1950
+Connection ~ 1650 1950
+Wire Wire Line
+	1800 1950 1800 1550
+Wire Wire Line
+	1650 2200 1650 1950
+Wire Wire Line
+	1950 1950 2050 1950
+Connection ~ 1950 1950
+Wire Wire Line
+	1950 2150 2050 2150
+Wire Wire Line
+	1950 1950 1950 2150
+Wire Wire Line
+	900  1950 900  2000
+Connection ~ 900  1950
+Wire Wire Line
+	900  1950 1650 1950
+Wire Wire Line
+	900  2300 900  2400
+Wire Wire Line
+	900  1900 900  1950
+Connection ~ 3100 2050
+Wire Wire Line
+	2850 2050 3100 2050
+Connection ~ 3100 2350
+Wire Wire Line
+	2850 2350 3100 2350
+Wire Wire Line
+	2850 2250 2850 2350
+Wire Wire Line
+	3100 2400 3100 2350
+Wire Wire Line
+	3500 2150 3500 2050
+$Comp
+L Device:C_Small C_1
+U 1 1 600CCBF4
+P 3500 2250
+F 0 "C_1" H 3592 2296 50  0000 L CNN
+F 1 "10u" H 3592 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3500 2250 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Murata-Electronics/GRJ155R60J106ME11D/?qs=I53XXhTNm8s0qq2xY2TjBg%3D%3D" H 3500 2250 50  0001 C CNN
+	1    3500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 600CBF4A
+P 2200 1550
+F 0 "L1" V 2390 1550 50  0000 C CNN
+F 1 "4u7" V 2299 1550 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 2200 1550 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/TDK/MLZ1608E4R7MT/?qs=h0qUPQyyc9d3MvAbpnb%252BVQ%3D%3D" H 2200 1550 50  0001 C CNN
+	1    2200 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+1V5 #PWR01
+U 1 1 600CB8D6
+P 900 1900
+F 0 "#PWR01" H 900 1750 50  0001 C CNN
+F 1 "+1V5" H 915 2073 50  0000 C CNN
+F 2 "" H 900 1900 50  0001 C CNN
+F 3 "" H 900 1900 50  0001 C CNN
+	1    900  1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 600CAFD2
+P 900 2400
+F 0 "#PWR02" H 900 2150 50  0001 C CNN
+F 1 "GND" H 905 2227 50  0000 C CNN
+F 2 "" H 900 2400 50  0001 C CNN
+F 3 "" H 900 2400 50  0001 C CNN
+	1    900  2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 600CA78E
+P 900 2200
+F 0 "BT1" H 1018 2296 50  0000 L CNN
+F 1 "Battery_Cell" H 1018 2205 50  0000 L CNN
+F 2 "0Pretty:battery_connector_narrow" V 900 2260 50  0001 C CNN
+F 3 "~" V 900 2260 50  0001 C CNN
+	1    900  2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 600CA084
+P 1650 2300
+F 0 "C4" H 1742 2346 50  0000 L CNN
+F 1 "4u7" H 1742 2255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1650 2300 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Murata-Electronics/GRT155C80J475ME13D/?qs=rrS6PyfT74fcISTT255Zog%3D%3D" H 1650 2300 50  0001 C CNN
+	1    1650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R_2
+U 1 1 600C2291
+P 3100 2550
+F 0 "R_2" H 3170 2596 50  0000 L CNN
+F 1 "562k" H 3170 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3030 2550 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Vishay-Dale/CRCW0402562KFKED/?qs=%2Fha2pyFaduhPlylfbvJy6ar93DMzWeQbjX06vzabe76NQfJPJgW8pg%3D%3D" H 3100 2550 50  0001 C CNN
+	1    3100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R_1
+U 1 1 600AEE26
+P 3100 2200
+F 0 "R_1" H 3170 2246 50  0000 L CNN
+F 1 "976k" H 3170 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3030 2200 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Vishay-Dale/CRCW0402976KFKED/?qs=%2Fha2pyFaduhPlylfbvJy6ar93DMzWeQbPZuD2dLI7vSocgEZ4tIj6w%3D%3D" H 3100 2200 50  0001 C CNN
+	1    3100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:MCP1640CCH U1
+U 1 1 600AC77F
+P 2450 2150
+F 0 "U1" H 2450 2617 50  0000 C CNN
+F 1 "MCP1640CCH" H 2450 2526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2500 1900 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002234D.pdf" H 2200 2600 50  0001 C CNN
+	1    2450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 60739B3C
+P 15100 6000
+F 0 "R13" H 15159 6046 50  0000 L CNN
+F 1 "10K" H 15159 5955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 15100 6000 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Vishay-Dale/CRCW040210K0FKEDC/?qs=E3Y5ESvWgWPiNLcGzwCGPg%3D%3D" H 15100 6000 50  0001 C CNN
+	1    15100 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 6074167A
+P 15100 5300
+F 0 "R12" H 15159 5346 50  0000 L CNN
+F 1 "10K" H 15159 5255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 15100 5300 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Vishay-Dale/CRCW040210K0FKEDC/?qs=E3Y5ESvWgWPiNLcGzwCGPg%3D%3D" H 15100 5300 50  0001 C CNN
+	1    15100 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15100 5400 15100 5450
+Wire Wire Line
+	15100 5450 15000 5450
+$Comp
+L power:+3V3 #PWR064
+U 1 1 60756D66
+P 15100 5150
+F 0 "#PWR064" H 15100 5000 50  0001 C CNN
+F 1 "+3V3" H 15115 5323 50  0000 C CNN
+F 2 "" H 15100 5150 50  0001 C CNN
+F 3 "" H 15100 5150 50  0001 C CNN
+	1    15100 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15100 5150 15100 5200
+$Comp
+L Device:C_Small C22
+U 1 1 6084FD5A
+P 13900 4900
+F 0 "C22" H 13992 4946 50  0000 L CNN
+F 1 "1u" H 13992 4855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 13900 4900 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Murata-Electronics/GRT155C80J105KE01D/?qs=drgMNd%252BkGPPklTH3DFv1UA%3D%3D" H 13900 4900 50  0001 C CNN
+	1    13900 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13900 4450 13900 4500
+Wire Wire Line
+	14300 4700 14300 5150
+Wire Wire Line
+	13900 5000 13900 5100
+Wire Wire Line
+	13900 4800 13900 4700
+$Comp
+L power:+3V3 #PWR051
+U 1 1 6098F1A3
+P 13550 4450
+F 0 "#PWR051" H 13550 4300 50  0001 C CNN
+F 1 "+3V3" H 13565 4623 50  0000 C CNN
+F 2 "" H 13550 4450 50  0001 C CNN
+F 3 "" H 13550 4450 50  0001 C CNN
+	1    13550 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR052
+U 1 1 6098F1A9
+P 13550 4850
+F 0 "#PWR052" H 13550 4600 50  0001 C CNN
+F 1 "GND" H 13555 4677 50  0000 C CNN
+F 2 "" H 13550 4850 50  0001 C CNN
+F 3 "" H 13550 4850 50  0001 C CNN
+	1    13550 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 6098F1B5
+P 13550 4650
+F 0 "C20" H 13642 4696 50  0000 L CNN
+F 1 "1u" H 13642 4605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 13550 4650 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Murata-Electronics/GRT155C80J105KE01D/?qs=drgMNd%252BkGPPklTH3DFv1UA%3D%3D" H 13550 4650 50  0001 C CNN
+	1    13550 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13550 4750 13550 4850
+Wire Wire Line
+	13550 4550 13550 4450
+$Comp
+L power:GND #PWR062
+U 1 1 601B3F5F
+P 14600 6500
+F 0 "#PWR062" H 14600 6250 50  0001 C CNN
+F 1 "GND" H 14605 6327 50  0000 C CNN
+F 2 "" H 14600 6500 50  0001 C CNN
+F 3 "" H 14600 6500 50  0001 C CNN
+	1    14600 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 6450 14600 6500
+$Comp
+L Device:Ferrite_Bead_Small FB2
+U 1 1 60A253A5
+P 13900 4600
+F 0 "FB2" H 14000 4646 50  0000 L CNN
+F 1 "MMZ2012Y152BTD25" H 14000 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 13830 4600 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/TDK/MMZ2012Y152BTD25?qs=z4cHi%252BdwYubbRRUCER1uug%3D%3D" H 13900 4600 50  0001 C CNN
+	1    13900 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 13900 4700
+$Comp
+L Analog_ADC:ADS1115IDGS U5
+U 1 1 60200D01
+P 14600 5650
+F 0 "U5" H 14600 6331 50  0000 C CNN
+F 1 "ADS1115IDGS" H 14600 6240 50  0000 C CNN
+F 2 "ADS1115:ADS1115IRUGR" H 14600 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 14550 4750 50  0001 C CNN
+	1    14600 5650
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	11800 600  15950 600 
+Text Notes 750  1100 0    50   ~ 0
+Reference design from datasheet for MCP1640 step-up from 1.5V battery to 3.3V
+Wire Wire Line
+	5450 1500 5450 1550
+Wire Wire Line
+	4750 3200 4750 3250
+Connection ~ 4750 2950
+Wire Wire Line
+	4750 2950 4750 3000
+$Comp
+L power:GND #PWR021
+U 1 1 605BB266
+P 4750 3250
+F 0 "#PWR021" H 4750 3000 50  0001 C CNN
+F 1 "GND" V 4755 3122 50  0000 R CNN
+F 2 "" H 4750 3250 50  0001 C CNN
+F 3 "" H 4750 3250 50  0001 C CNN
+	1    4750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 6059DFB2
+P 4750 3100
+F 0 "C11" H 4842 3146 50  0000 L CNN
+F 1 "1u" H 4842 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4750 3100 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Taiyo-Yuden/LMK105BJ105MVHF/?qs=sBf%2Fb4nBSlfFq2d5eQRmhw%3D%3D" H 4750 3100 50  0001 C CNN
+F 4 "https://www.mouser.sk/ProductDetail/Taiyo-Yuden/LMK105BJ105MVHF/?qs=sBf%2Fb4nBSlfFq2d5eQRmhw%3D%3D" H 4750 3100 50  0001 C CNN "Buy"
+	1    4750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L UBS5-3V3:LD3985M33R IC1
+U 1 1 6054DC0D
+P 5350 2950
+F 0 "IC1" H 6050 3215 50  0000 C CNN
+F 1 "LD3985M33R" H 6050 3124 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6600 3050 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00003395.pdf" H 6600 2950 50  0001 L CNN
+F 4 "LD3985M33R, Low Dropout Voltage Regulator, 0.55A, 3.3V +/-2%, 2.5 to 6Vin, 5-Pin SOT-23" H 6600 2850 50  0001 L CNN "Description"
+F 5 "1.45" H 6600 2750 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 6600 2650 50  0001 L CNN "Manufacturer_Name"
+F 7 "LD3985M33R" H 6600 2550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-LD3985M33R" H 6600 2450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LD3985M33R/?qs=22WmWNTp1rrPOccVv4HZ7A%3D%3D" H 6600 2350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "LD3985M33R" H 6600 2250 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/ld3985m33r/stmicroelectronics" H 6600 2150 50  0001 L CNN "Arrow Price/Stock"
+	1    5350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR020
+U 1 1 6048B1A2
+P 4750 2950
+F 0 "#PWR020" H 4750 2800 50  0001 C CNN
+F 1 "+5V" H 4765 3123 50  0000 C CNN
+F 2 "" H 4750 2950 50  0001 C CNN
+F 3 "" H 4750 2950 50  0001 C CNN
+	1    4750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 604BA720
+P 5050 3300
+F 0 "C12" H 5142 3346 50  0000 L CNN
+F 1 "100n" H 5142 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 3300 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0201KRX6S6BB104/?qs=tS%2FAHvPQ%2F55Jn9CaHON1Eg%3D%3D" H 5050 3300 50  0001 C CNN
+F 4 "https://www.mouser.sk/ProductDetail/Yageo/CC0201KRX6S6BB104/?qs=tS%2FAHvPQ%2F55Jn9CaHON1Eg%3D%3D" H 5050 3300 50  0001 C CNN "Buy"
+	1    5050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 604BB164
+P 5050 3400
+F 0 "#PWR025" H 5050 3150 50  0001 C CNN
+F 1 "GND" V 5055 3272 50  0000 R CNN
+F 2 "" H 5050 3400 50  0001 C CNN
+F 3 "" H 5050 3400 50  0001 C CNN
+	1    5050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2950 5050 2950
+Wire Wire Line
+	5050 3150 5050 3200
+Wire Wire Line
+	5050 3150 5350 3150
+Wire Wire Line
+	5050 3150 5050 2950
+Connection ~ 5050 3150
+Connection ~ 5050 2950
+Wire Wire Line
+	5050 2950 5350 2950
+$Comp
+L power:GND #PWR026
+U 1 1 6051A409
+P 5350 3050
+F 0 "#PWR026" H 5350 2800 50  0001 C CNN
+F 1 "GND" V 5355 2922 50  0000 R CNN
+F 2 "" H 5350 3050 50  0001 C CNN
+F 3 "" H 5350 3050 50  0001 C CNN
+	1    5350 3050
+	0    1    1    0   
+$EndComp
+Text Notes 4600 2650 0    50   ~ 0
+USB power regulator 5V to 3.3V
+Wire Wire Line
+	1700 6300 1700 6800
+$Comp
+L power:+3V3 #PWR07
+U 1 1 605F336B
+P 1500 6800
+F 0 "#PWR07" H 1500 6650 50  0001 C CNN
+F 1 "+3V3" H 1515 6973 50  0000 C CNN
+F 2 "" H 1500 6800 50  0001 C CNN
+F 3 "" H 1500 6800 50  0001 C CNN
+	1    1500 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6800 1500 6800
+$Comp
+L Device:R_Small R1
+U 1 1 6077287F
+P 1300 8650
+F 0 "R1" H 1359 8696 50  0000 L CNN
+F 1 "100K" H 1359 8605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1300 8650 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Welwyn-Components-TT-Electronics/WCR0402-100KFA/?qs=%2Fha2pyFaduhPlylfbvJy6ar93DMzWeQbkIrpOvswXaUoZ0xMVRPNhw%3D%3D" H 1300 8650 50  0001 C CNN
+	1    1300 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ST32WB55CG:STM32WB55CG U2
+U 1 1 6083559C
+P 2600 7950
+F 0 "U2" H 3628 7253 60  0000 L CNN
+F 1 "STM32WB55CG" H 3628 7147 60  0000 L CNN
+F 2 "ST32_3D:STM32WB55CGU7" H 2800 8000 60  0001 L CNN
+F 3 "https://www.mouser.sk/datasheet/2/389/stm32wb55cc-1588841.pdf" H 2800 7800 60  0001 L CNN
+F 4 "https://www.mouser.sk/ProductDetail/STMicroelectronics/STM32WB55CGU6TR/?qs=vLWxofP3U2xiqLUzBgGZzw==" H 2600 7950 50  0001 C CNN "Buy"
+	1    2600 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ST32WB55CG:STM32WB55CG U2
+U 2 1 6083DDBA
+P 2600 9850
+F 0 "U2" H 3628 9453 60  0000 L CNN
+F 1 "STM32WB55CG" H 3628 9347 60  0000 L CNN
+F 2 "ST32_3D:STM32WB55CGU7" H 2800 9900 60  0001 L CNN
+F 3 "https://www.mouser.sk/datasheet/2/389/stm32wb55cc-1588841.pdf" H 2800 9700 60  0001 L CNN
+	2    2600 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ST32WB55CG:STM32WB55CG U2
+U 7 1 60845B9C
+P 2950 5700
+F 0 "U2" H 3678 5303 60  0000 L CNN
+F 1 "STM32WB55CG" H 3678 5197 60  0000 L CNN
+F 2 "ST32_3D:STM32WB55CGU7" H 3150 5750 60  0001 L CNN
+F 3 "https://www.mouser.sk/datasheet/2/389/stm32wb55cc-1588841.pdf" H 3150 5550 60  0001 L CNN
+	7    2950 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 5700
+Wire Wire Line
+	2950 5700 2950 5600
+Connection ~ 2950 5800
+Wire Wire Line
+	2950 5800 2950 5700
+Wire Wire Line
+	5700 8600 6500 8600
+$Comp
+L ST32WB55CG:STM32WB55CG U2
+U 6 1 6087144C
+P 6500 8300
+F 0 "U2" H 7328 8153 60  0000 L CNN
+F 1 "STM32WB55CG" H 7328 8047 60  0000 L CNN
+F 2 "ST32_3D:STM32WB55CGU7" H 6700 8350 60  0001 L CNN
+F 3 "https://www.mouser.sk/datasheet/2/389/stm32wb55cc-1588841.pdf" H 6700 8150 60  0001 L CNN
+	6    6500 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ST32WB55CG:STM32WB55CG U2
+U 5 1 6087A1EB
+P 9450 9050
+F 0 "U2" H 10778 8953 60  0000 L CNN
+F 1 "STM32WB55CG" H 10778 8847 60  0000 L CNN
+F 2 "ST32_3D:STM32WB55CGU7" H 9650 9100 60  0001 L CNN
+F 3 "https://www.mouser.sk/datasheet/2/389/stm32wb55cc-1588841.pdf" H 9650 8900 60  0001 L CNN
+	5    9450 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ST32WB55CG:STM32WB55CG U2
+U 3 1 6087C6C8
+P 9400 6900
+F 0 "U2" H 9892 7187 60  0000 C CNN
+F 1 "STM32WB55CG" H 9892 7081 60  0000 C CNN
+F 2 "ST32_3D:STM32WB55CGU7" H 9600 6950 60  0001 L CNN
+F 3 "https://www.mouser.sk/datasheet/2/389/stm32wb55cc-1588841.pdf" H 9600 6750 60  0001 L CNN
+	3    9400 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 608886D6
+P 1300 9100
+F 0 "#PWR05" H 1300 8850 50  0001 C CNN
+F 1 "GND" H 1305 8927 50  0000 C CNN
+F 2 "" H 1300 9100 50  0001 C CNN
+F 3 "" H 1300 9100 50  0001 C CNN
+	1    1300 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 6088B72F
+P 1300 8900
+F 0 "D1" V 1339 8782 50  0000 R CNN
+F 1 "LED Blue" V 1248 8782 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 1300 8900 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/OSRAM-Opto-Semiconductors/LG-L29K-F2J1-24-Z/?qs=%2Fha2pyFadui8mRqiN7zzL5RStDGglQ4GIP%2Fi93RguZtNhIrXvo9new%3D%3D&utm_source=octopart&utm_medium=aggregator&utm_campaign=720-LGL29KF2J124Z&utm_content=Osram%20Opto%20Semiconductor" H 1300 8900 50  0001 C CNN
+	1    1300 8900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 9050 1300 9100
+Text GLabel 2600 8350 0    50   Input ~ 0
+LED_BLUE
+Text GLabel 1300 8500 1    50   Input ~ 0
+LED_BLUE
+Wire Wire Line
+	1300 8500 1300 8550
+$Comp
+L power:+3V3 #PWR037
+U 1 1 60948CAA
+P 9000 10000
+F 0 "#PWR037" H 9000 9850 50  0001 C CNN
+F 1 "+3V3" H 9015 10173 50  0000 C CNN
+F 2 "" H 9000 10000 50  0001 C CNN
+F 3 "" H 9000 10000 50  0001 C CNN
+	1    9000 10000
+	1    0    0    -1  
+$EndComp
+Text Notes 9750 10900 0    50   ~ 0
+Boot mode selection switch\nBOOT=0 Default position, connected to GND\nBOOT=1 Connected to 3.3V
+Wire Wire Line
+	2950 5800 2950 5900
+Connection ~ 2950 5900
+Wire Wire Line
+	2950 5900 2950 6000
+Wire Wire Line
+	2950 6500 2950 6600
+Connection ~ 2950 6600
+Wire Wire Line
+	2950 6600 2950 6800
+$Comp
+L FilterBT:MLPF-WB55-01E3 FL1
+U 1 1 602FD4A6
+P 6100 10500
+F 0 "FL1" H 6650 10035 50  0000 C CNN
+F 1 "MLPF-WB55-01E3" H 6650 10126 50  0000 C CNN
+F 2 "0Pretty:MLPF-WB55-02E3" H 7050 10600 50  0001 L CNN
+F 3 "https://www.st.com/resource/en/datasheet/mlpf-wb55-01e3.pdf" H 7050 10500 50  0001 L CNN
+F 4 "RF Wireless Misc 2.4 GHz Low Pass Filter matched to STM32WB55" H 7050 10400 50  0001 L CNN "Description"
+F 5 "0.7" H 7050 10300 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 7050 10200 50  0001 L CNN "Manufacturer_Name"
+F 7 "MLPF-WB55-01E3" H 7050 10100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-MLPF-WB55-01E3" H 7050 10000 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/MLPF-WB55-01E3?qs=vLWxofP3U2xV%2FkxL9PmCDA%3D%3D" H 7050 9900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "MLPF-WB55-01E3" H 7050 9800 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/mlpf-wb55-01e3/stmicroelectronics" H 7050 9700 50  0001 L CNN "Arrow Price/Stock"
+	1    6100 10500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 6036A663
+P 4950 10600
+F 0 "#PWR023" H 4950 10350 50  0001 C CNN
+F 1 "GND" H 4955 10427 50  0000 C CNN
+F 2 "" H 4950 10600 50  0001 C CNN
+F 3 "" H 4950 10600 50  0001 C CNN
+	1    4950 10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 10300 4950 10300
+Wire Wire Line
+	4950 10300 4950 10400
+Wire Wire Line
+	5000 10500 4950 10500
+Connection ~ 4950 10500
+Wire Wire Line
+	4950 10500 4950 10600
+Wire Wire Line
+	5000 10400 4950 10400
+Connection ~ 4950 10400
+Wire Wire Line
+	4950 10400 4950 10500
+$Comp
+L power:GND #PWR030
+U 1 1 603960DB
+P 6250 10400
+F 0 "#PWR030" H 6250 10150 50  0001 C CNN
+F 1 "GND" H 6255 10227 50  0000 C CNN
+F 2 "" H 6250 10400 50  0001 C CNN
+F 3 "" H 6250 10400 50  0001 C CNN
+	1    6250 10400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 10400 6100 10400
+Wire Wire Line
+	6650 10500 6100 10500
+$Comp
+L power:GND #PWR034
+U 1 1 60529174
+P 7500 10750
+F 0 "#PWR034" H 7500 10500 50  0001 C CNN
+F 1 "GND" H 7505 10577 50  0000 C CNN
+F 2 "" H 7500 10750 50  0001 C CNN
+F 3 "" H 7500 10750 50  0001 C CNN
+	1    7500 10750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 10500 7500 10500
+Wire Wire Line
+	7500 10500 7500 10600
+Wire Wire Line
+	7450 10600 7500 10600
+Connection ~ 7500 10600
+Text Notes 1200 9250 1    50   ~ 0
+LED for debugging purposes
+Wire Wire Line
+	9450 9350 9300 9350
+Connection ~ 9300 9350
+Connection ~ 1500 6800
+$Comp
+L Device:C_Small C3
+U 1 1 602B9F53
+P 1500 6900
+F 0 "C3" H 1592 6946 50  0000 L CNN
+F 1 "4u7" H 1592 6855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1500 6900 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Murata-Electronics/GRT155C80J475ME13D/?qs=rrS6PyfT74fcISTT255Zog%3D%3D" H 1500 6900 50  0001 C CNN
+	1    1500 6900
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4500 7950 4500 11000
+Wire Wire Line
+	7500 10600 7500 10750
+Wire Notes Line
+	7450 10750 7450 9750
+Wire Notes Line
+	7450 9750 6650 9750
+Wire Notes Line
+	6650 9750 6650 10750
+Wire Notes Line
+	6650 10750 7450 10750
+Text Notes 6700 9950 0    50   ~ 0
+Coaxial antenna \nconnector
+Text GLabel 2600 10550 0    50   Input ~ 0
+BNO055_INT
+Wire Notes Line
+	700  11000 4400 11000
+Wire Notes Line
+	4500 11000 8150 11000
+Wire Notes Line
+	4500 7950 8150 7950
+Wire Notes Line
+	8150 7950 8150 11000
+Wire Wire Line
+	1650 10650 2600 10650
+Wire Wire Line
+	1400 10750 2600 10750
+Text GLabel 2600 9250 0    50   Input ~ 0
+SYS_JTMS-SWDIO
+Text GLabel 2600 9350 0    50   Input ~ 0
+SYS_JTCK-SWCLK
+Text GLabel 2600 10150 0    50   Input ~ 0
+SYS_JTDO-SWO
+Wire Notes Line
+	700  950  4250 950 
+Wire Notes Line
+	4250 950  4250 3100
+Wire Notes Line
+	700  950  700  3100
+Wire Notes Line
+	700  3100 4250 3100
+Wire Notes Line
+	15300 -2600 15300 -2450
+Connection ~ 2550 4900
+Wire Wire Line
+	2550 4950 2550 4900
+Connection ~ 2550 4700
+Wire Wire Line
+	2550 4650 2550 4700
+$Comp
+L power:GND #PWR016
+U 1 1 600AEF22
+P 2550 4950
+F 0 "#PWR016" H 2550 4700 50  0001 C CNN
+F 1 "GND" H 2555 4777 50  0000 C CNN
+F 2 "" H 2550 4950 50  0001 C CNN
+F 3 "" H 2550 4950 50  0001 C CNN
+	1    2550 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR015
+U 1 1 600AE88F
+P 2550 4650
+F 0 "#PWR015" H 2550 4500 50  0001 C CNN
+F 1 "+3V3" H 2565 4823 50  0000 C CNN
+F 2 "" H 2550 4650 50  0001 C CNN
+F 3 "" H 2550 4650 50  0001 C CNN
+	1    2550 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4700 2900 4700
+Connection ~ 3250 4700
+Wire Wire Line
+	2900 4700 2550 4700
+Connection ~ 2900 4700
+Wire Wire Line
+	3600 4700 3250 4700
+Wire Wire Line
+	3250 4900 3600 4900
+Connection ~ 3250 4900
+Wire Wire Line
+	2900 4900 3250 4900
+Connection ~ 2900 4900
+Wire Wire Line
+	2550 4900 2900 4900
+$Comp
+L Device:C_Small C7
+U 1 1 6013F8C2
+P 2550 4800
+F 0 "C7" H 2642 4846 50  0000 L CNN
+F 1 "100n" H 2642 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2550 4800 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0402JRX7R8BB104/?qs=tS%2FAHvPQ%2F56C6Jcuby2Lxg%3D%3D" H 2550 4800 50  0001 C CNN
+	1    2550 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 6013F56D
+P 2900 4800
+F 0 "C8" H 2992 4846 50  0000 L CNN
+F 1 "100n" H 2992 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2900 4800 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0402JRX7R8BB104/?qs=tS%2FAHvPQ%2F56C6Jcuby2Lxg%3D%3D" H 2900 4800 50  0001 C CNN
+	1    2900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 6013F05A
+P 3250 4800
+F 0 "C9" H 3342 4846 50  0000 L CNN
+F 1 "100n" H 3342 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3250 4800 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0402JRX7R8BB104/?qs=tS%2FAHvPQ%2F56C6Jcuby2Lxg%3D%3D" H 3250 4800 50  0001 C CNN
+	1    3250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 6013D105
+P 3600 4800
+F 0 "C10" H 3692 4846 50  0000 L CNN
+F 1 "100n" H 3692 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3600 4800 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0402JRX7R8BB104/?qs=tS%2FAHvPQ%2F56C6Jcuby2Lxg%3D%3D" H 3600 4800 50  0001 C CNN
+	1    3600 4800
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	700  4300 4400 4300
+Wire Notes Line
+	4400 4300 4400 7500
+Wire Notes Line
+	700  4300 700  7500
+Wire Notes Line
+	700  7500 4400 7500
+Wire Notes Line
+	4400 7600 4400 11000
+Wire Notes Line
+	700  7600 700  11000
+Wire Notes Line
+	700  7600 4400 7600
+Wire Notes Line
+	8250 5950 11550 5950
+Text Notes 12000 850  0    79   ~ 0
+BNO055 9DOF senzor I2C and 32.768 kHz OSC
+$Comp
+L Device:C_Small C24
+U 1 1 60C6714D
+P 15225 1400
+F 0 "C24" H 15317 1446 50  0000 L CNN
+F 1 "22p" H 15317 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 15225 1400 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/KEMET/C0402C220J5GAC7411/?qs=G1g%2FCI6Oc7%252BpkCDhmQb%252B2A%3D%3D" H 15225 1400 50  0001 C CNN
+	1    15225 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15325 1400 15525 1400
+$Comp
+L power:GND #PWR044
+U 1 1 60DE0801
+P 13350 2700
+F 0 "#PWR044" H 13350 2450 50  0001 C CNN
+F 1 "GND" H 13355 2527 50  0000 C CNN
+F 2 "" H 13350 2700 50  0001 C CNN
+F 3 "" H 13350 2700 50  0001 C CNN
+	1    13350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR045
+U 1 1 60E615BB
+P 13400 1300
+F 0 "#PWR045" H 13400 1150 50  0001 C CNN
+F 1 "+3V3" H 13415 1473 50  0000 C CNN
+F 2 "" H 13400 1300 50  0001 C CNN
+F 3 "" H 13400 1300 50  0001 C CNN
+	1    13400 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 1650 13500 1650
+$Comp
+L Device:R_Small R6
+U 1 1 60E77DF9
+P 13400 1450
+F 0 "R6" H 13459 1496 50  0000 L CNN
+F 1 "10K" H 13459 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 13400 1450 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Vishay-Dale/CRCW040210K0FKEDC/?qs=E3Y5ESvWgWPiNLcGzwCGPg%3D%3D" H 13400 1450 50  0001 C CNN
+	1    13400 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 1300 13400 1350
+Wire Wire Line
+	13400 1550 13400 1650
+Wire Wire Line
+	6150 1850 6200 1850
+$Comp
+L mypower:+5V #PWR027
+U 1 1 6033D433
+P 5450 1500
+F 0 "#PWR027" H 5450 1350 50  0001 C CNN
+F 1 "+5V" H 5465 1673 50  0000 C CNN
+F 2 "" H 5450 1500 50  0001 C CNN
+F 3 "" H 5450 1500 50  0001 C CNN
+	1    5450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L mypower:+5V #PWR029
+U 1 1 6033D9EE
+P 6150 1850
+F 0 "#PWR029" H 6150 1700 50  0001 C CNN
+F 1 "+5V" V 6165 1978 50  0000 L CNN
+F 2 "" H 6150 1850 50  0001 C CNN
+F 3 "" H 6150 1850 50  0001 C CNN
+	1    6150 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 6033E1AD
+P 5050 2250
+F 0 "#PWR024" H 5050 2000 50  0001 C CNN
+F 1 "GND" H 5055 2077 50  0000 C CNN
+F 2 "" H 5050 2250 50  0001 C CNN
+F 3 "" H 5050 2250 50  0001 C CNN
+	1    5050 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 606FF3CD
+P 5050 1750
+F 0 "J1" H 5107 2217 50  0000 C CNN
+F 1 "USB_B_Micro" H 5107 2126 50  0000 C CNN
+F 2 "microUSB:UB-MC5BR3-SDWP604-4S-TF" H 5200 1700 50  0001 C CNN
+F 3 "https://www.tme.eu/Document/7505dce1b4a576fb38a063ffeef6b4eb/usbwater.pdf" H 5200 1700 50  0001 C CNN
+	1    5050 1750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5350 1950
+$Comp
+L mypower:+3V3 #PWR06
+U 1 1 603682E1
+P 1400 10200
+F 0 "#PWR06" H 1400 10050 50  0001 C CNN
+F 1 "+3V3" H 1415 10373 50  0000 C CNN
+F 2 "" H 1400 10200 50  0001 C CNN
+F 3 "" H 1400 10200 50  0001 C CNN
+	1    1400 10200
+	1    0    0    -1  
+$EndComp
+Connection ~ 15100 5450
+Wire Wire Line
+	15150 5450 15100 5450
+Text GLabel 2600 10450 0    50   Input ~ 0
+ADC_ALERT
+Wire Wire Line
+	5450 9000 5700 9000
+Wire Wire Line
+	4800 9000 5150 9000
+Wire Wire Line
+	13900 4700 14300 4700
+Wire Wire Line
+	14600 6050 14600 6250
+$Comp
+L Device:L L2
+U 1 1 602C2BCF
+P 5900 9000
+F 0 "L2" V 6090 9000 50  0000 C CNN
+F 1 "10u" V 5999 9000 50  0000 C CNN
+F 2 "0Pretty:L_0712_SMD" H 5900 9000 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Bourns/PM0603-10NJ-RC/?qs=hDfDVdb8C4gaFG%2FjJv%252Bsvg%3D%3D" H 5900 9000 50  0001 C CNN
+	1    5900 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 60197EBC
+P 5300 9000
+F 0 "JP1" H 5300 8775 50  0000 C CNN
+F 1 "SolderJumper Open" H 5300 8866 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5300 9000 50  0001 C CNN
+F 3 "~" H 5300 9000 50  0001 C CNN
+	1    5300 9000
+	-1   0    0    1   
+$EndComp
+Text GLabel 15150 5450 2    50   Input ~ 0
+ADC_ALERT
+NoConn ~ 14200 5850
+Wire Wire Line
+	13350 2550 13350 2650
+Wire Wire Line
+	14700 1400 15025 1400
+Wire Wire Line
+	15025 1400 15125 1400
+Connection ~ 15025 1400
+Wire Wire Line
+	14750 2650 14700 2650
+Wire Wire Line
+	14750 2650 14750 2700
+$Comp
+L power:+3V3 #PWR053
+U 1 1 60EBE372
+P 13050 3100
+F 0 "#PWR053" H 13050 2950 50  0001 C CNN
+F 1 "+3V3" H 13065 3273 50  0000 C CNN
+F 2 "" H 13050 3100 50  0001 C CNN
+F 3 "" H 13050 3100 50  0001 C CNN
+	1    13050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C21
+U 1 1 60EBC683
+P 14000 3300
+F 0 "C21" V 13771 3300 50  0000 C CNN
+F 1 "100n" V 13862 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 14000 3300 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0402JRX7R8BB104/?qs=tS%2FAHvPQ%2F56C6Jcuby2Lxg%3D%3D" H 14000 3300 50  0001 C CNN
+	1    14000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 2650 13350 2650
+Wire Wire Line
+	13500 2550 13350 2550
+$Comp
+L power:+3V3 #PWR047
+U 1 1 60D83125
+P 13500 2050
+F 0 "#PWR047" H 13500 1900 50  0001 C CNN
+F 1 "+3V3" H 13515 2223 50  0000 C CNN
+F 2 "" H 13500 2050 50  0001 C CNN
+F 3 "" H 13500 2050 50  0001 C CNN
+	1    13500 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14750 2900 14750 2950
+$Comp
+L power:GND #PWR061
+U 1 1 60CCA434
+P 14750 2950
+F 0 "#PWR061" H 14750 2700 50  0001 C CNN
+F 1 "GND" H 14755 2777 50  0000 C CNN
+F 2 "" H 14750 2950 50  0001 C CNN
+F 3 "" H 14750 2950 50  0001 C CNN
+	1    14750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C23
+U 1 1 60CB8751
+P 14750 2800
+F 0 "C23" H 14842 2846 50  0000 L CNN
+F 1 "100n" H 14842 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 14750 2800 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Murata-Electronics/GRT155C80J105KE01D/?qs=drgMNd%252BkGPPklTH3DFv1UA%3D%3D" H 14750 2800 50  0001 C CNN
+	1    14750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14700 1900 15025 1900
+$Comp
+L power:GND #PWR066
+U 1 1 60C67172
+P 15525 2000
+F 0 "#PWR066" H 15525 1750 50  0001 C CNN
+F 1 "GND" H 15530 1827 50  0000 C CNN
+F 2 "" H 15525 2000 50  0001 C CNN
+F 3 "" H 15525 2000 50  0001 C CNN
+	1    15525 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15525 1900 15525 2000
+Wire Wire Line
+	15025 1400 15025 1550
+Wire Wire Line
+	15025 1750 15025 1900
+Wire Wire Line
+	15525 1400 15525 1900
+Wire Wire Line
+	15525 1900 15325 1900
+Connection ~ 15525 1900
+Connection ~ 15025 1900
+$Comp
+L Device:Crystal_Small Y3
+U 1 1 60C6715A
+P 15025 1650
+F 0 "Y3" H 15025 1425 50  0000 C CNN
+F 1 "NX2012SA-32768K" H 15025 1516 50  0000 C CNN
+F 2 "0Pretty:Crystal_2012_custom" H 15025 1650 50  0001 C CNN
+F 3 "https://cz.mouser.com/ProductDetail/NDK/NX2012SA-32768K-STD-MUB-1/?qs=55YtniHzbhA%252B6%2Fl1MwFZaQ==" H 15025 1650 50  0001 C CNN
+	1    15025 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15025 1900 15125 1900
+$Comp
+L Device:C_Small C25
+U 1 1 60C67153
+P 15225 1900
+F 0 "C25" H 15317 1946 50  0000 L CNN
+F 1 "22p" H 15317 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 15225 1900 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/KEMET/C0402C220J5GAC7411/?qs=G1g%2FCI6Oc7%252BpkCDhmQb%252B2A%3D%3D" H 15225 1900 50  0001 C CNN
+	1    15225 1900
+	0    -1   -1   0   
+$EndComp
+Text GLabel 13500 1850 0    50   Input ~ 0
+BNO055_INT
+Wire Notes Line
+	11800 7050 15950 7050
+Text Notes 11900 7250 0    79   ~ 0
+Pinout section
+Text GLabel 12450 7800 2    50   Input ~ 0
+SPI_MOSI
+Text GLabel 12450 7900 2    50   Input ~ 0
+SPI_MISO
+Text GLabel 12450 8000 2    50   Input ~ 0
+SPI_SCK
+Wire Wire Line
+	14200 5550 14000 5550
+$Comp
+L Device:R_Small R9
+U 1 1 60876669
+P 14000 5950
+F 0 "R9" H 14059 5996 50  0000 L CNN
+F 1 "100K" H 14059 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 14000 5950 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Welwyn-Components-TT-Electronics/WCR0402-100KFA/?qs=%2Fha2pyFaduhPlylfbvJy6ar93DMzWeQbkIrpOvswXaUoZ0xMVRPNhw%3D%3D" H 14000 5950 50  0001 C CNN
+	1    14000 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 608773C9
+P 13700 5950
+F 0 "R8" H 13759 5996 50  0000 L CNN
+F 1 "100K" H 13759 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 13700 5950 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Welwyn-Components-TT-Electronics/WCR0402-100KFA/?qs=%2Fha2pyFaduhPlylfbvJy6ar93DMzWeQbkIrpOvswXaUoZ0xMVRPNhw%3D%3D" H 13700 5950 50  0001 C CNN
+	1    13700 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 6087782F
+P 13400 5950
+F 0 "R7" H 13459 5996 50  0000 L CNN
+F 1 "100K" H 13459 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 13400 5950 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Welwyn-Components-TT-Electronics/WCR0402-100KFA/?qs=%2Fha2pyFaduhPlylfbvJy6ar93DMzWeQbkIrpOvswXaUoZ0xMVRPNhw%3D%3D" H 13400 5950 50  0001 C CNN
+	1    13400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR049
+U 1 1 60877E1B
+P 13400 6050
+F 0 "#PWR049" H 13400 5800 50  0001 C CNN
+F 1 "GND" H 13405 5877 50  0000 C CNN
+F 2 "" H 13400 6050 50  0001 C CNN
+F 3 "" H 13400 6050 50  0001 C CNN
+	1    13400 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR054
+U 1 1 60878A0B
+P 13700 6050
+F 0 "#PWR054" H 13700 5800 50  0001 C CNN
+F 1 "GND" H 13705 5877 50  0000 C CNN
+F 2 "" H 13700 6050 50  0001 C CNN
+F 3 "" H 13700 6050 50  0001 C CNN
+	1    13700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR058
+U 1 1 60878D99
+P 14000 6050
+F 0 "#PWR058" H 14000 5800 50  0001 C CNN
+F 1 "GND" H 14005 5877 50  0000 C CNN
+F 2 "" H 14000 6050 50  0001 C CNN
+F 3 "" H 14000 6050 50  0001 C CNN
+	1    14000 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 5650 13700 5850
+Connection ~ 13700 5650
+Wire Wire Line
+	13700 5650 14200 5650
+Wire Wire Line
+	13400 5850 13400 5750
+Connection ~ 13400 5750
+Wire Wire Line
+	13400 5750 14200 5750
+Wire Wire Line
+	14000 5850 14000 5550
+Connection ~ 14000 5550
+$Comp
+L power:GND #PWR059
+U 1 1 609F968E
+P 14400 8700
+F 0 "#PWR059" H 14400 8450 50  0001 C CNN
+F 1 "GND" H 14405 8527 50  0000 C CNN
+F 2 "" H 14400 8700 50  0001 C CNN
+F 3 "" H 14400 8700 50  0001 C CNN
+	1    14400 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR048
+U 1 1 609F9CDE
+P 13300 5450
+F 0 "#PWR048" H 13300 5300 50  0001 C CNN
+F 1 "+3V3" H 13315 5623 50  0000 C CNN
+F 2 "" H 13300 5450 50  0001 C CNN
+F 3 "" H 13300 5450 50  0001 C CNN
+	1    13300 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 5450 13300 5450
+Wire Wire Line
+	13000 5550 14000 5550
+Wire Wire Line
+	13000 5650 13700 5650
+Wire Wire Line
+	13000 5750 13400 5750
+Wire Notes Line
+	13050 5150 13050 6050
+Wire Notes Line
+	12300 6050 12300 5150
+Text Notes 13000 6000 2    50   ~ 0
+FSR04 sensor x3
+Wire Notes Line
+	12300 6050 13050 6050
+Wire Notes Line
+	12300 5150 13050 5150
+Text GLabel 14300 8050 2    50   Input ~ 0
+SYS_JTMS-SWDIO
+Text GLabel 14300 8150 2    50   Input ~ 0
+SYS_JTCK-SWCLK
+Text GLabel 12450 8950 2    50   Input ~ 0
+NRST
+Text Notes 14200 7600 0    50   ~ 0
+For DEBUGGING ONLY\nThese pins are not necessary \njust in case MCU comes without \nDFU firmware (allows USB programming)\n3.3V and GND are in Analog section
+Text Notes 13450 7250 0    50   ~ 0
+ST-Link
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 60C5C082
+P 12800 5550
+F 0 "J4" H 12908 5831 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 12908 5740 50  0000 C CNN
+F 2 "0Pretty:Pin_FSR" H 12800 5550 50  0001 C CNN
+F 3 "~" H 12800 5550 50  0001 C CNN
+	1    12800 5550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	15950 6950 15950 4000
+Wire Notes Line
+	11800 4000 15950 4000
+Wire Notes Line
+	11800 4000 11800 6950
+Wire Notes Line
+	11800 6950 15950 6950
+Text Notes 6400 9400 0    50   ~ 0
+SMPS is not necessary but makes MCU, \nespecially Bluetooth connection, \nmore efficient and less power hungry
+Text GLabel 3600 1900 2    50   Input ~ 0
+3v3fromBAT
+Wire Wire Line
+	3100 2050 3500 2050
+Wire Wire Line
+	3500 2050 3500 1900
+Wire Wire Line
+	3500 1900 3600 1900
+Connection ~ 3500 2050
+Text GLabel 7600 2950 2    50   Input ~ 0
+3v3fromUSB
+Wire Wire Line
+	7600 2950 7550 2950
+Connection ~ 7550 2950
+Text GLabel 9700 2250 0    50   Input ~ 0
+3v3fromBAT
+Text GLabel 9700 2450 0    50   Input ~ 0
+3v3fromUSB
+Text Notes 700  4200 0    79   ~ 0
+STM32WB microcontroller section
+Wire Notes Line
+	8250 950  8250 3800
+Wire Notes Line
+	8250 3800 4400 3800
+Wire Notes Line
+	4400 950  4400 3800
+Wire Notes Line
+	8250 950  4400 950 
+Wire Notes Line
+	600  600  600  3900
+Text Notes 750  850  0    79   ~ 0
+Power section
+Text Notes 8800 1700 0    50   ~ 0
+Power selector switch
+Wire Notes Line
+	600  600  11650 600 
+Wire Notes Line
+	600  3900 11650 3900
+Wire Notes Line
+	11650 600  11650 3900
+Wire Notes Line
+	11650 4000 11650 11100
+Wire Notes Line
+	600  4000 600  11100
+Wire Notes Line
+	600  4000 11650 4000
+Wire Notes Line
+	600  11100 11650 11100
+Text GLabel 12900 1650 0    50   Input ~ 0
+BNO055_RESET
+Text GLabel 12450 8650 2    50   Input ~ 0
+BNO055_RESET
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 6035CD9E
+P 12250 7900
+F 0 "J2" H 12358 8281 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 12358 8190 50  0000 C CNN
+F 2 "0Pretty:pin_03" H 12250 7900 50  0001 C CNN
+F 3 "~" H 12250 7900 50  0001 C CNN
+	1    12250 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L3
+U 1 1 603D019F
+P 6250 9000
+F 0 "L3" V 6440 9000 50  0000 C CNN
+F 1 "10n" V 6349 9000 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 6250 9000 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/KEMET/L0603C10NJRMST/?qs=v1sh8PPj49i58Ne9vk%2F5nA%3D%3D" H 6250 9000 50  0001 C CNN
+	1    6250 9000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 9000 5750 9000
+Wire Wire Line
+	6100 9000 6050 9000
+Wire Wire Line
+	6400 9000 6450 9000
+Text GLabel 2600 9450 0    50   Input ~ 0
+GENERAL_PIN_OUT1
+Text GLabel 2600 10350 0    50   Input ~ 0
+GENERAL_PIN_OUT3
+Text GLabel 2600 10250 0    50   Input ~ 0
+GENERAL_PIN_OUT2
+Wire Notes Line
+	13350 7100 15900 7100
+$Comp
+L power:+3V3 #PWR060
+U 1 1 602F84E1
+P 14650 7900
+F 0 "#PWR060" H 14650 7750 50  0001 C CNN
+F 1 "+3V3" H 14665 8073 50  0000 C CNN
+F 2 "" H 14650 7900 50  0001 C CNN
+F 3 "" H 14650 7900 50  0001 C CNN
+	1    14650 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14650 7900 14650 7950
+Wire Wire Line
+	14300 7950 14650 7950
+Wire Notes Line
+	13350 9050 15900 9050
+Wire Notes Line
+	11800 9100 15950 9100
+Wire Wire Line
+	1750 5400 1750 5450
+Wire Wire Line
+	2150 5700 1750 5700
+Wire Wire Line
+	2150 5700 2150 6100
+Wire Wire Line
+	1750 5650 1750 5700
+Connection ~ 1750 5700
+$Comp
+L Device:Ferrite_Bead_Small FB3
+U 1 1 602DFC4B
+P 14600 6350
+F 0 "FB3" H 14700 6396 50  0000 L CNN
+F 1 "MMZ2012Y152BTD25" H 14700 6305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 14530 6350 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/TDK/MMZ2012Y152BTD25?qs=z4cHi%252BdwYubbRRUCER1uug%3D%3D" H 14600 6350 50  0001 C CNN
+	1    14600 6350
+	1    0    0    -1  
+$EndComp
+Text Notes 4700 5550 0    79   ~ 0
+SpyPen \nThis pen uses ST32WB55 wireless Bluetooth LE microcontroller. \nPowered by a 1.5 AAAA or AAA battery thanks to MCP1640 stepup to 3.3V\nI2C connections to peripherals:\n1. TI ADS1115 for converting analog FSR04 force input to digital \n2. Bosch BNO055 for 9-way motion detection - Accelerometer, Gyroscope, Magnetometer\n\nThis is a prototype. It has few unnecessary parts \n(ST-Link, SMPS, switch), \nalthough these parts make debugging easier.
+$Comp
+L BOOTSwitch:MLL1200S S1
+U 1 1 6047FE9A
+P 9000 10150
+F 0 "S1" H 9600 10415 50  0000 C CNN
+F 1 "MLL1200S" H 9600 10324 50  0000 C CNN
+F 2 "vypinac:MLL1200S" H 10050 10250 50  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1437575-1&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=1437575-1" H 10050 10150 50  0001 L CNN
+F 4 "TE CONNECTIVITY / ALCOSWITCH - MLL1200S - SLIDE SWITCH, SPDT, 0.3A, 4VDC, SMD" H 10050 10050 50  0001 L CNN "Description"
+F 5 "1.75" H 10050 9950 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 10050 9850 50  0001 L CNN "Manufacturer_Name"
+F 7 "MLL1200S" H 10050 9750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "506-MLL1200S" H 10050 9650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/MLL1200S/?qs=%252BHgkcFtPSlhaU4bDJZHWiQ%3D%3D" H 10050 9550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "MLL1200S" H 10050 9450 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/mll1200s/te-connectivity" H 10050 9350 50  0001 L CNN "Arrow Price/Stock"
+	1    9000 10150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 9350 8850 10250
+Wire Wire Line
+	8850 10250 9000 10250
+Wire Wire Line
+	8850 9350 9300 9350
+NoConn ~ 10900 2250
+NoConn ~ 10900 2350
+NoConn ~ 10900 2450
+NoConn ~ 9700 2550
+$Comp
+L power:+3V3 #PWR043
+U 1 1 6054A0B8
+P 9100 2150
+F 0 "#PWR043" H 9100 2000 50  0001 C CNN
+F 1 "+3V3" H 9115 2323 50  0000 C CNN
+F 2 "" H 9100 2150 50  0001 C CNN
+F 3 "" H 9100 2150 50  0001 C CNN
+	1    9100 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2150 9100 2350
+Wire Wire Line
+	9100 2350 9700 2350
+Wire Wire Line
+	9000 10150 9000 10000
+NoConn ~ 9000 10350
+NoConn ~ 9000 10450
+NoConn ~ 10200 10150
+NoConn ~ 10200 10250
+NoConn ~ 10200 10350
+Wire Notes Line
+	11550 5950 11550 11000
+Wire Notes Line
+	8250 5950 8250 11000
+$Comp
+L Diode:1N4148WT D3
+U 1 1 602FB1D1
+P 13100 1650
+F 0 "D3" H 13100 1867 50  0000 C CNN
+F 1 "1N4148WT" H 13100 1776 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 13100 1475 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30396.pdf" H 13100 1650 50  0001 C CNN
+	1    13100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 1650 13400 1650
+Connection ~ 13400 1650
+Wire Wire Line
+	12900 1650 12950 1650
+$Comp
+L USB_svab:USBLC6-2SC6 IC2
+U 1 1 6020EDBD
+P 7500 1950
+F 0 "IC2" H 8150 1485 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 8150 1576 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8650 2050 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00050750.pdf" H 8650 1950 50  0001 L CNN
+F 4 "TVS Diode Array Uni-Directional USBLC6-2SC6 17V, SOT-23 6-Pin" H 8650 1850 50  0001 L CNN "Description"
+F 5 "1.45" H 8650 1750 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 8650 1650 50  0001 L CNN "Manufacturer_Name"
+F 7 "USBLC6-2SC6" H 8650 1550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-USBLC6-2SC6" H 8650 1450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/USBLC6-2SC6/?qs=po45yt2pPpu%2FhNIlwQdTlg%3D%3D" H 8650 1350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "USBLC6-2SC6" H 8650 1250 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/usblc6-2sc6/stmicroelectronics" H 8650 1150 50  0001 L CNN "Arrow Price/Stock"
+	1    7500 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14700 1725 14700 1900
+$Comp
+L BNO055:BNO055_my U4
+U 1 1 60C2BC5B
+P 14100 2150
+F 0 "U4" H 14100 2950 50  0000 C CNN
+F 1 "BNO055_my" H 14100 2850 50  0000 C CNN
+F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 14350 1500 50  0001 L CNN
+F 3 "https://www.mouser.sk/ProductDetail/Bosch-Sensortec/BNO055/?qs=QhAb4EtQfbV8Z2YmISucWw==" H 14100 2350 50  0001 C CNN
+F 4 "https://www.mouser.sk/ProductDetail/Bosch-Sensortec/BNO055/?qs=QhAb4EtQfbV8Z2YmISucWw==" H 14100 2150 50  0001 C CNN "Buy"
+	1    14100 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14700 1400 14700 1650
+$Comp
+L power:GND #PWR046
+U 1 1 60507EBE
+P 14100 3450
+F 0 "#PWR046" H 14100 3200 50  0001 C CNN
+F 1 "GND" H 14105 3277 50  0000 C CNN
+F 2 "" H 14100 3450 50  0001 C CNN
+F 3 "" H 14100 3450 50  0001 C CNN
+	1    14100 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 3050 14200 3050
+Wire Wire Line
+	14200 3450 14100 3450
+$Comp
+L Device:C_Small C27
+U 1 1 60525634
+P 13650 3300
+F 0 "C27" V 13421 3300 50  0000 C CNN
+F 1 "100n" V 13512 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 13650 3300 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0402JRX7R8BB104/?qs=tS%2FAHvPQ%2F56C6Jcuby2Lxg%3D%3D" H 13650 3300 50  0001 C CNN
+	1    13650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C26
+U 1 1 60536D28
+P 13300 3300
+F 0 "C26" V 13071 3300 50  0000 C CNN
+F 1 "100n" V 13162 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 13300 3300 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/Yageo/CC0402JRX7R8BB104/?qs=tS%2FAHvPQ%2F56C6Jcuby2Lxg%3D%3D" H 13300 3300 50  0001 C CNN
+	1    13300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 3450 14000 3450
+Wire Wire Line
+	13300 3450 13300 3400
+Connection ~ 14100 3450
+Wire Wire Line
+	13650 3400 13650 3450
+Connection ~ 13650 3450
+Wire Wire Line
+	13650 3450 13300 3450
+Wire Wire Line
+	14000 3400 14000 3450
+Connection ~ 14000 3450
+Wire Wire Line
+	14000 3450 13650 3450
+Wire Wire Line
+	13050 3100 13300 3100
+Wire Wire Line
+	14200 3050 14200 3450
+Connection ~ 14200 3050
+Wire Wire Line
+	14000 3100 14000 3200
+Wire Wire Line
+	13650 3100 13650 3200
+Connection ~ 13650 3100
+Wire Wire Line
+	13650 3100 13900 3100
+Wire Wire Line
+	13300 3100 13300 3200
+Connection ~ 13300 3100
+Wire Wire Line
+	13300 3100 13650 3100
+Connection ~ 14000 3100
+Connection ~ 13900 3100
+Wire Wire Line
+	13900 3100 14000 3100
+Wire Wire Line
+	14700 2350 15100 2350
+Wire Wire Line
+	15100 2350 15100 2450
+Connection ~ 15100 2550
+Wire Wire Line
+	14700 2550 15100 2550
+Wire Wire Line
+	14700 2450 15100 2450
+Connection ~ 15100 2450
+Wire Wire Line
+	15100 2450 15100 2550
+Wire Wire Line
+	15100 2950 14750 2950
+Wire Wire Line
+	15100 2550 15100 2950
+Connection ~ 14750 2950
+Text Notes 12850 2800 0    50   ~ 0
+ADDR \n0x28 GND\n0x29 NC
+Wire Wire Line
+	13350 2650 13350 2700
+Connection ~ 13350 2650
+Wire Wire Line
+	13900 2850 13900 3100
+Wire Wire Line
+	14000 2850 14000 3100
+Wire Wire Line
+	14100 2850 14100 3050
+Wire Wire Line
+	14200 2850 14200 3050
+Text GLabel 6200 1750 0    50   Input ~ 0
+USB_OD+
+Text GLabel 5350 1750 2    50   Input ~ 0
+USB_OD+
+Text GLabel 5350 1850 2    50   Input ~ 0
+USB_OD-
+Text GLabel 6200 1950 0    50   Input ~ 0
+USB_OD-
+NoConn ~ 2600 8450
+Text GLabel 14300 8350 2    50   Input ~ 0
+SYS_JTDO-SWO
+Text GLabel 14300 8250 2    50   Input ~ 0
+GENERAL_PIN_OUT1
+Text GLabel 14300 8450 2    50   Input ~ 0
+GENERAL_PIN_OUT2
+Text GLabel 14300 8550 2    50   Input ~ 0
+GENERAL_PIN_OUT3
+Wire Notes Line
+	11800 600  11800 3900
+Wire Notes Line
+	11800 3900 15950 3900
+Wire Notes Line
+	15950 600  15950 3900
+$Comp
+L Connector:Conn_01x08_Male J7
+U 1 1 606645DD
+P 14100 8250
+F 0 "J7" H 14208 8731 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 14208 8640 50  0000 C CNN
+F 2 "0Pretty:pin_08" H 14100 8250 50  0001 C CNN
+F 3 "~" H 14100 8250 50  0001 C CNN
+	1    14100 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14400 8700 14400 8650
+Wire Wire Line
+	14400 8650 14300 8650
+$Comp
+L Connector:Conn_01x01_Male J6
+U 1 1 6067F0F8
+P 12250 8950
+F 0 "J6" H 12358 9131 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 12358 9040 50  0000 C CNN
+F 2 "0Pretty:pin_01" H 12250 8950 50  0001 C CNN
+F 3 "~" H 12250 8950 50  0001 C CNN
+	1    12250 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J5
+U 1 1 60697EFD
+P 12250 8650
+F 0 "J5" H 12358 8831 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 12358 8740 50  0000 C CNN
+F 2 "0Pretty:pin_01" H 12250 8650 50  0001 C CNN
+F 3 "~" H 12250 8650 50  0001 C CNN
+	1    12250 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 606E654D
+P 12250 8300
+F 0 "J3" H 12358 8481 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 12358 8390 50  0000 C CNN
+F 2 "0Pretty:pin_02" H 12250 8300 50  0001 C CNN
+F 3 "~" H 12250 8300 50  0001 C CNN
+	1    12250 8300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	11800 7050 11800 9100
+Wire Notes Line
+	13350 7100 13350 9050
+Wire Notes Line
+	15900 7100 15900 9050
+Wire Notes Line
+	15950 7050 15950 9100
+$Comp
+L USB_svab:Crystal_GND3_Small Y1
+U 1 1 60884A18
+P 8950 8850
+F 0 "Y1" H 8950 9075 50  0000 C CNN
+F 1 "NX2520SA-32MHz" H 8950 8984 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm" H 8950 8850 50  0001 C CNN
+F 3 "https://www.mouser.sk/ProductDetail/NDK/NX2520SA-32000M-STD-CSW-2/?qs=%2Fha2pyFaduhUJxai0GMc4AhsTjxCJg0fyiRMxPSEYyVjVpBYLd4mpFd1d7Shc6ZUjEI%2FEEUUBVA%3D" H 8950 8850 50  0001 C CNN
+	1    8950 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L BOOTSwitch:MLL1200S S2
+U 1 1 604714A1
+P 9700 2250
+F 0 "S2" H 10300 2515 50  0000 C CNN
+F 1 "MLL1200S" H 10300 2424 50  0000 C CNN
+F 2 "vypinac:MLL1200S" H 10750 2350 50  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1437575-1&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=1437575-1" H 10750 2250 50  0001 L CNN
+F 4 "TE CONNECTIVITY / ALCOSWITCH - MLL1200S - SLIDE SWITCH, SPDT, 0.3A, 4VDC, SMD" H 10750 2150 50  0001 L CNN "Description"
+F 5 "1.75" H 10750 2050 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 10750 1950 50  0001 L CNN "Manufacturer_Name"
+F 7 "MLL1200S" H 10750 1850 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "506-MLL1200S" H 10750 1750 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/MLL1200S/?qs=%252BHgkcFtPSlhaU4bDJZHWiQ%3D%3D" H 10750 1650 50  0001 L CNN "Mouser Price/Stock"
+F 10 "MLL1200S" H 10750 1550 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/mll1200s/te-connectivity" H 10750 1450 50  0001 L CNN "Arrow Price/Stock"
+	1    9700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L konektorAntennaaRECE:RECE.20279.001E.01 ed1
+U 1 1 603D98CC
+P 6650 10500
+F 0 "ed1" H 7050 10765 50  0000 C CNN
+F 1 "RECE.20279.001E.01" H 7050 10674 50  0000 C CNN
+F 2 "RECE_antena_connector:RECE.20279.001E.01" H 7300 10600 50  0001 L CNN
+F 3 "http://www.taoglas.com/wp-content/uploads/2016/04/RECE.20279.001E.01.pdf" H 7300 10500 50  0001 L CNN
+F 4 "IPEX MHF Receptacle" H 7300 10400 50  0001 L CNN "Description"
+F 5 "" H 7300 10300 50  0001 L CNN "Height"
+F 6 "Taoglas" H 7300 10200 50  0001 L CNN "Manufacturer_Name"
+F 7 "RECE.20279.001E.01" H 7300 10100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "N/A" H 7300 10000 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=N%2FA" H 7300 9900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 7300 9800 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 7300 9700 50  0001 L CNN "Arrow Price/Stock"
+	1    6650 10500
+	1    0    0    -1  
+$EndComp
+Text GLabel 13500 2350 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 13500 2450 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 12450 8400 2    50   Input ~ 0
+I2C_SDA
+Text GLabel 12450 8300 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 1250 10750 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 1250 10650 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 15000 5750 2    50   Input ~ 0
+I2C_SDA
+Text GLabel 15000 5650 2    50   Input ~ 0
+I2C_SCL
+$EndSCHEMATC
