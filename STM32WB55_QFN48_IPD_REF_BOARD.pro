@@ -1,6 +1,6 @@
-update=Mon 01 Mar 2021 11:11:06 AM CET
+update=Fri 05 Mar 2021 09:51:00 PM CET
 version=1
-last_client=kicad
+last_client=pcbnew
 [general]
 version=1
 RootSch=
@@ -44,9 +44,17 @@ TrackWidth3=0.4
 TrackWidth4=0.5
 ViaDiameter1=0.8
 ViaDrill1=0.4
+ViaDiameter2=0.5
+ViaDrill2=0.3
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
+dPairWidth2=0.25
+dPairGap2=0.3
+dPairViaGap2=0
+dPairWidth3=0.341
+dPairGap3=0.2
+dPairViaGap3=0
 SilkLineWidth=0.15
 SilkTextSizeV=1
 SilkTextSizeH=1
@@ -80,7 +88,7 @@ Name=GND
 Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
-Name=PWR
+Name=PWD
 Type=1
 Enabled=1
 [pcbnew/Layer.In3.Cu]
@@ -247,5 +255,38 @@ ViaDrill=0.4
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=+3.3V
+Clearance=0.2
+TrackWidth=0.25
+ViaDiameter=0.5
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=GND
+Clearance=0.2
+TrackWidth=0.25
+ViaDiameter=0.5
+ViaDrill=0.3
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
+Name=USB Data
+Clearance=0.2
+TrackWidth=0.25
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.341
 dPairGap=0.25
 dPairViaGap=0.25

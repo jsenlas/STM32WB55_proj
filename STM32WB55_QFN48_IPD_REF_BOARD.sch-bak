@@ -2418,10 +2418,10 @@ I2C_SDA
 Text GLabel 15000 5650 2    50   Input ~ 0
 I2C_SCL
 $Comp
-L Mechanical:Housing N1
+L Mechanical:Housing N?
 U 1 1 604548EA
 P 6750 6850
-F 0 "N1" H 6903 6884 50  0000 L CNN
+F 0 "N?" H 6903 6884 50  0000 L CNN
 F 1 "Housing" H 6903 6793 50  0000 L CNN
 F 2 "Symbol:KiCad-Logo2_5mm_Copper" H 6800 6900 50  0001 C CNN
 F 3 "~" H 6800 6900 50  0001 C CNN
