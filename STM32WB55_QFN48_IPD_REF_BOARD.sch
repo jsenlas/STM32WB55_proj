@@ -851,10 +851,10 @@ F 3 "https://www.mouser.sk/ProductDetail/Vishay-Dale/CRCW0402976KFKED/?qs=%2Fha2
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:MCP1640CCH U1
+L Regulator_Switching:MCP1640CCH MCP1640
 U 1 1 600AC77F
 P 2450 2150
-F 0 "U1" H 2450 2617 50  0000 C CNN
+F 0 "MCP1640" H 2450 2617 50  0000 C CNN
 F 1 "MCP1640CCH" H 2450 2526 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2500 1900 50  0001 L CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002234D.pdf" H 2200 2600 50  0001 C CNN
@@ -982,10 +982,10 @@ F 3 "https://www.mouser.sk/ProductDetail/TDK/MMZ2012Y152BTD25?qs=z4cHi%252BdwYub
 $EndComp
 Connection ~ 13900 4700
 $Comp
-L Analog_ADC:ADS1115IDGS U5
+L Analog_ADC:ADS1115IDGS ADS1115
 U 1 1 60200D01
 P 14600 5650
-F 0 "U5" H 14600 6331 50  0000 C CNN
+F 0 "ADS1115" H 14600 6331 50  0000 C CNN
 F 1 "ADS1115IDGS" H 14600 6240 50  0000 C CNN
 F 2 "ADS1115:ADS1115IRUGR" H 14600 5150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 14550 4750 50  0001 C CNN
@@ -1305,16 +1305,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR030
 U 1 1 603960DB
-P 6250 10400
-F 0 "#PWR030" H 6250 10150 50  0001 C CNN
-F 1 "GND" H 6255 10227 50  0000 C CNN
-F 2 "" H 6250 10400 50  0001 C CNN
-F 3 "" H 6250 10400 50  0001 C CNN
-	1    6250 10400
+P 6300 10400
+F 0 "#PWR030" H 6300 10150 50  0001 C CNN
+F 1 "GND" H 6305 10227 50  0000 C CNN
+F 2 "" H 6300 10400 50  0001 C CNN
+F 3 "" H 6300 10400 50  0001 C CNN
+	1    6300 10400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6250 10400 6100 10400
 Wire Wire Line
 	6650 10500 6100 10500
 $Comp
@@ -1777,11 +1775,11 @@ Wire Notes Line
 	11800 7050 15950 7050
 Text Notes 11900 7250 0    79   ~ 0
 Pinout section
-Text GLabel 12450 7800 2    50   Input ~ 0
+Text GLabel 12450 7700 2    50   Input ~ 0
 SPI_MOSI
-Text GLabel 12450 7900 2    50   Input ~ 0
+Text GLabel 12450 7800 2    50   Input ~ 0
 SPI_MISO
-Text GLabel 12450 8000 2    50   Input ~ 0
+Text GLabel 12450 7900 2    50   Input ~ 0
 SPI_SCK
 Wire Wire Line
 	14200 5550 14000 5550
@@ -1867,12 +1865,12 @@ Connection ~ 14000 5550
 $Comp
 L power:GND #PWR059
 U 1 1 609F968E
-P 14400 8700
-F 0 "#PWR059" H 14400 8450 50  0001 C CNN
-F 1 "GND" H 14405 8527 50  0000 C CNN
-F 2 "" H 14400 8700 50  0001 C CNN
-F 3 "" H 14400 8700 50  0001 C CNN
-	1    14400 8700
+P 15300 8550
+F 0 "#PWR059" H 15300 8300 50  0001 C CNN
+F 1 "GND" H 15305 8377 50  0000 C CNN
+F 2 "" H 15300 8550 50  0001 C CNN
+F 3 "" H 15300 8550 50  0001 C CNN
+	1    15300 8550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1904,10 +1902,6 @@ Wire Notes Line
 	12300 6050 13050 6050
 Wire Notes Line
 	12300 5150 13050 5150
-Text GLabel 14300 8050 2    50   Input ~ 0
-SYS_JTMS-SWDIO
-Text GLabel 14300 8150 2    50   Input ~ 0
-SYS_JTCK-SWCLK
 Text GLabel 12450 8950 2    50   Input ~ 0
 NRST
 Text Notes 14200 7600 0    50   ~ 0
@@ -1988,14 +1982,14 @@ BNO055_RESET
 Text GLabel 12450 8650 2    50   Input ~ 0
 BNO055_RESET
 $Comp
-L Connector:Conn_01x03_Male J2
+L Connector:Conn_01x03_Male J_SPI1
 U 1 1 6035CD9E
-P 12250 7900
-F 0 "J2" H 12358 8281 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 12358 8190 50  0000 C CNN
-F 2 "0Pretty:pin_03" H 12250 7900 50  0001 C CNN
-F 3 "~" H 12250 7900 50  0001 C CNN
-	1    12250 7900
+P 12250 7800
+F 0 "J_SPI1" H 12358 8181 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 12358 8090 50  0000 C CNN
+F 2 "0Pretty:pin_03" H 12250 7800 50  0001 C CNN
+F 3 "~" H 12250 7800 50  0001 C CNN
+	1    12250 7800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2026,18 +2020,16 @@ Wire Notes Line
 $Comp
 L power:+3V3 #PWR060
 U 1 1 602F84E1
-P 14650 7900
-F 0 "#PWR060" H 14650 7750 50  0001 C CNN
-F 1 "+3V3" H 14665 8073 50  0000 C CNN
-F 2 "" H 14650 7900 50  0001 C CNN
-F 3 "" H 14650 7900 50  0001 C CNN
-	1    14650 7900
+P 15500 8200
+F 0 "#PWR060" H 15500 8050 50  0001 C CNN
+F 1 "+3V3" H 15515 8373 50  0000 C CNN
+F 2 "" H 15500 8200 50  0001 C CNN
+F 3 "" H 15500 8200 50  0001 C CNN
+	1    15500 8200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14650 7900 14650 7950
-Wire Wire Line
-	14300 7950 14650 7950
+	15500 8200 15500 8250
 Wire Notes Line
 	13350 9050 15900 9050
 Wire Notes Line
@@ -2065,10 +2057,10 @@ $EndComp
 Text Notes 4700 5550 0    79   ~ 0
 SpyPen \nThis pen uses ST32WB55 wireless Bluetooth LE microcontroller. \nPowered by a 1.5 AAAA or AAA battery thanks to MCP1640 stepup to 3.3V\nI2C connections to peripherals:\n1. TI ADS1115 for converting analog FSR04 force input to digital \n2. Bosch BNO055 for 9-way motion detection - Accelerometer, Gyroscope, Magnetometer\n\nThis is a prototype. It has few unnecessary parts \n(ST-Link, SMPS, switch), \nalthough these parts make debugging easier.
 $Comp
-L BOOTSwitch:MLL1200S S1
+L BOOTSwitch:MLL1200S S_BOOT1
 U 1 1 6047FE9A
 P 9000 10150
-F 0 "S1" H 9600 10415 50  0000 C CNN
+F 0 "S_BOOT1" H 9600 10415 50  0000 C CNN
 F 1 "MLL1200S" H 9600 10324 50  0000 C CNN
 F 2 "vypinac:MLL1200S" H 10050 10250 50  0001 L CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1437575-1&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=1437575-1" H 10050 10150 50  0001 L CNN
@@ -2157,10 +2149,10 @@ $EndComp
 Wire Wire Line
 	14700 1725 14700 1900
 $Comp
-L BNO055:BNO055_my U4
+L BNO055:BNO055_my BNO55
 U 1 1 60C2BC5B
 P 14100 2150
-F 0 "U4" H 14100 2950 50  0000 C CNN
+F 0 "BNO55" H 14100 2950 50  0000 C CNN
 F 1 "BNO055_my" H 14100 2850 50  0000 C CNN
 F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 14350 1500 50  0001 L CNN
 F 3 "https://www.mouser.sk/ProductDetail/Bosch-Sensortec/BNO055/?qs=QhAb4EtQfbV8Z2YmISucWw==" H 14100 2350 50  0001 C CNN
@@ -2282,13 +2274,13 @@ USB_OD-
 Text GLabel 6200 1950 0    50   Input ~ 0
 USB_OD-
 NoConn ~ 2600 8450
-Text GLabel 14300 8350 2    50   Input ~ 0
+Text GLabel 13900 8150 2    50   Input ~ 0
 SYS_JTDO-SWO
-Text GLabel 14300 8250 2    50   Input ~ 0
+Text GLabel 13900 8600 2    50   Input ~ 0
 GENERAL_PIN_OUT1
-Text GLabel 14300 8450 2    50   Input ~ 0
+Text GLabel 13900 8700 2    50   Input ~ 0
 GENERAL_PIN_OUT2
-Text GLabel 14300 8550 2    50   Input ~ 0
+Text GLabel 13900 8800 2    50   Input ~ 0
 GENERAL_PIN_OUT3
 Wire Notes Line
 	11800 600  11800 3900
@@ -2296,26 +2288,15 @@ Wire Notes Line
 	11800 3900 15950 3900
 Wire Notes Line
 	15950 600  15950 3900
-$Comp
-L Connector:Conn_01x08_Male J7
-U 1 1 606645DD
-P 14100 8250
-F 0 "J7" H 14208 8731 50  0000 C CNN
-F 1 "Conn_01x08_Male" H 14208 8640 50  0000 C CNN
-F 2 "0Pretty:pin_08" H 14100 8250 50  0001 C CNN
-F 3 "~" H 14100 8250 50  0001 C CNN
-	1    14100 8250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	14400 8700 14400 8650
+	15300 8550 15300 8500
 Wire Wire Line
-	14400 8650 14300 8650
+	15300 8500 15200 8500
 $Comp
-L Connector:Conn_01x01_Male J6
+L Connector:Conn_01x01_Male J_NRST1
 U 1 1 6067F0F8
 P 12250 8950
-F 0 "J6" H 12358 9131 50  0000 C CNN
+F 0 "J_NRST1" H 12358 9131 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 12358 9040 50  0000 C CNN
 F 2 "0Pretty:pin_01" H 12250 8950 50  0001 C CNN
 F 3 "~" H 12250 8950 50  0001 C CNN
@@ -2323,10 +2304,10 @@ F 3 "~" H 12250 8950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J5
+L Connector:Conn_01x01_Male J_BNO055RST1
 U 1 1 60697EFD
 P 12250 8650
-F 0 "J5" H 12358 8831 50  0000 C CNN
+F 0 "J_BNO055RST1" H 12358 8831 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 12358 8740 50  0000 C CNN
 F 2 "0Pretty:pin_01" H 12250 8650 50  0001 C CNN
 F 3 "~" H 12250 8650 50  0001 C CNN
@@ -2334,14 +2315,14 @@ F 3 "~" H 12250 8650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J3
+L Connector:Conn_01x02_Male J_I2C1
 U 1 1 606E654D
-P 12250 8300
-F 0 "J3" H 12358 8481 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 12358 8390 50  0000 C CNN
-F 2 "0Pretty:pin_02" H 12250 8300 50  0001 C CNN
-F 3 "~" H 12250 8300 50  0001 C CNN
-	1    12250 8300
+P 12250 8200
+F 0 "J_I2C1" H 12358 8381 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 12358 8290 50  0000 C CNN
+F 2 "0Pretty:pin_02" H 12250 8200 50  0001 C CNN
+F 3 "~" H 12250 8200 50  0001 C CNN
+	1    12250 8200
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -2364,10 +2345,10 @@ F 3 "https://www.mouser.sk/ProductDetail/NDK/NX2520SA-32000M-STD-CSW-2/?qs=%2Fha
 	1    0    0    -1  
 $EndComp
 $Comp
-L BOOTSwitch:MLL1200S S2
+L BOOTSwitch:MLL1200S S_PWR1
 U 1 1 604714A1
 P 9700 2250
-F 0 "S2" H 10300 2515 50  0000 C CNN
+F 0 "S_PWR1" H 10300 2515 50  0000 C CNN
 F 1 "MLL1200S" H 10300 2424 50  0000 C CNN
 F 2 "vypinac:MLL1200S" H 10750 2350 50  0001 L CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1437575-1&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=1437575-1" H 10750 2250 50  0001 L CNN
@@ -2401,22 +2382,6 @@ F 11 "" H 7300 9700 50  0001 L CNN "Arrow Price/Stock"
 	1    6650 10500
 	1    0    0    -1  
 $EndComp
-Text GLabel 13500 2350 0    50   Input ~ 0
-I2C_SDA
-Text GLabel 13500 2450 0    50   Input ~ 0
-I2C_SCL
-Text GLabel 12450 8400 2    50   Input ~ 0
-I2C_SDA
-Text GLabel 12450 8300 2    50   Input ~ 0
-I2C_SCL
-Text GLabel 1250 10750 0    50   Input ~ 0
-I2C_SDA
-Text GLabel 1250 10650 0    50   Input ~ 0
-I2C_SCL
-Text GLabel 15000 5750 2    50   Input ~ 0
-I2C_SDA
-Text GLabel 15000 5650 2    50   Input ~ 0
-I2C_SCL
 $Comp
 L Mechanical:Housing N1
 U 1 1 604548EA
@@ -2428,4 +2393,77 @@ F 3 "~" H 6800 6900 50  0001 C CNN
 	1    6750 6850
 	1    0    0    -1  
 $EndComp
+Text Label 6100 10500 0    50   ~ 0
+R_OUT
+Wire Wire Line
+	6100 10400 6300 10400
+Text GLabel 12450 8300 2    50   Input ~ 0
+I2C_SDA
+Text GLabel 12450 8200 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 1250 10750 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 1250 10650 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 13500 2350 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 13500 2450 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 15000 5750 2    50   Input ~ 0
+I2C_SDA
+Wire Wire Line
+	2950 6500 3050 6500
+Connection ~ 2950 6500
+Text GLabel 15000 5650 2    50   Input ~ 0
+I2C_SCL
+$Comp
+L Connector:Conn_01x03_Male J_SWD1
+U 1 1 6063B73A
+P 13700 8050
+F 0 "J_SWD1" H 13808 8431 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 13808 8340 50  0000 C CNN
+F 2 "0Pretty:pin_03" H 13700 8050 50  0001 C CNN
+F 3 "~" H 13700 8050 50  0001 C CNN
+	1    13700 8050
+	1    0    0    -1  
+$EndComp
+Text GLabel 13900 7950 2    50   Input ~ 0
+SYS_JTMS-SWDIO
+Text GLabel 13900 8050 2    50   Input ~ 0
+SYS_JTCK-SWCLK
+$Comp
+L Connector:Conn_01x03_Male J_GEN1
+U 1 1 60642C00
+P 13700 8700
+F 0 "J_GEN1" H 13808 9081 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 13808 8990 50  0000 C CNN
+F 2 "0Pretty:pin_03" H 13700 8700 50  0001 C CNN
+F 3 "~" H 13700 8700 50  0001 C CNN
+	1    13700 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J_PWR1
+U 1 1 6064D342
+P 15000 8250
+F 0 "J_PWR1" H 15108 8431 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 15108 8340 50  0000 C CNN
+F 2 "0Pretty:pin_01" H 15000 8250 50  0001 C CNN
+F 3 "~" H 15000 8250 50  0001 C CNN
+	1    15000 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J_GND1
+U 1 1 6065FBB8
+P 15000 8500
+F 0 "J_GND1" H 15108 8681 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 15108 8590 50  0000 C CNN
+F 2 "0Pretty:pin_01" H 15000 8500 50  0001 C CNN
+F 3 "~" H 15000 8500 50  0001 C CNN
+	1    15000 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15200 8250 15500 8250
 $EndSCHEMATC
