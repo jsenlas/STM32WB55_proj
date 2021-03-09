@@ -1027,25 +1027,6 @@ F 4 "https://www.mouser.sk/ProductDetail/Taiyo-Yuden/LMK105BJ105MVHF/?qs=sBf%2Fb
 	1    0    0    -1  
 $EndComp
 $Comp
-L UBS5-3V3:LD3985M33R IC1
-U 1 1 6054DC0D
-P 5350 2950
-F 0 "IC1" H 6050 3215 50  0000 C CNN
-F 1 "LD3985M33R" H 6050 3124 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6600 3050 50  0001 L CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00003395.pdf" H 6600 2950 50  0001 L CNN
-F 4 "LD3985M33R, Low Dropout Voltage Regulator, 0.55A, 3.3V +/-2%, 2.5 to 6Vin, 5-Pin SOT-23" H 6600 2850 50  0001 L CNN "Description"
-F 5 "1.45" H 6600 2750 50  0001 L CNN "Height"
-F 6 "STMicroelectronics" H 6600 2650 50  0001 L CNN "Manufacturer_Name"
-F 7 "LD3985M33R" H 6600 2550 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "511-LD3985M33R" H 6600 2450 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LD3985M33R/?qs=22WmWNTp1rrPOccVv4HZ7A%3D%3D" H 6600 2350 50  0001 L CNN "Mouser Price/Stock"
-F 10 "LD3985M33R" H 6600 2250 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/ld3985m33r/stmicroelectronics" H 6600 2150 50  0001 L CNN "Arrow Price/Stock"
-	1    5350 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR020
 U 1 1 6048B1A2
 P 4750 2950
@@ -2127,25 +2108,6 @@ Wire Wire Line
 Connection ~ 13400 1650
 Wire Wire Line
 	12900 1650 12950 1650
-$Comp
-L USB_svab:USBLC6-2SC6 IC2
-U 1 1 6020EDBD
-P 7500 1950
-F 0 "IC2" H 8150 1485 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 8150 1576 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8650 2050 50  0001 L CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00050750.pdf" H 8650 1950 50  0001 L CNN
-F 4 "TVS Diode Array Uni-Directional USBLC6-2SC6 17V, SOT-23 6-Pin" H 8650 1850 50  0001 L CNN "Description"
-F 5 "1.45" H 8650 1750 50  0001 L CNN "Height"
-F 6 "STMicroelectronics" H 8650 1650 50  0001 L CNN "Manufacturer_Name"
-F 7 "USBLC6-2SC6" H 8650 1550 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "511-USBLC6-2SC6" H 8650 1450 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/USBLC6-2SC6/?qs=po45yt2pPpu%2FhNIlwQdTlg%3D%3D" H 8650 1350 50  0001 L CNN "Mouser Price/Stock"
-F 10 "USBLC6-2SC6" H 8650 1250 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/usblc6-2sc6/stmicroelectronics" H 8650 1150 50  0001 L CNN "Arrow Price/Stock"
-	1    7500 1950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	14700 1725 14700 1900
 $Comp
@@ -2345,25 +2307,6 @@ F 3 "https://www.mouser.sk/ProductDetail/NDK/NX2520SA-32000M-STD-CSW-2/?qs=%2Fha
 	1    0    0    -1  
 $EndComp
 $Comp
-L BOOTSwitch:MLL1200S S_PWR1
-U 1 1 604714A1
-P 9700 2250
-F 0 "S_PWR1" H 10300 2515 50  0000 C CNN
-F 1 "MLL1200S" H 10300 2424 50  0000 C CNN
-F 2 "vypinac:MLL1200S" H 10750 2350 50  0001 L CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1437575-1&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=1437575-1" H 10750 2250 50  0001 L CNN
-F 4 "TE CONNECTIVITY / ALCOSWITCH - MLL1200S - SLIDE SWITCH, SPDT, 0.3A, 4VDC, SMD" H 10750 2150 50  0001 L CNN "Description"
-F 5 "1.75" H 10750 2050 50  0001 L CNN "Height"
-F 6 "TE Connectivity" H 10750 1950 50  0001 L CNN "Manufacturer_Name"
-F 7 "MLL1200S" H 10750 1850 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "506-MLL1200S" H 10750 1750 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/MLL1200S/?qs=%252BHgkcFtPSlhaU4bDJZHWiQ%3D%3D" H 10750 1650 50  0001 L CNN "Mouser Price/Stock"
-F 10 "MLL1200S" H 10750 1550 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/mll1200s/te-connectivity" H 10750 1450 50  0001 L CNN "Arrow Price/Stock"
-	1    9700 2250
-	1    0    0    -1  
-$EndComp
-$Comp
 L konektorAntennaaRECE:RECE.20279.001E.01 ed1
 U 1 1 603D98CC
 P 6650 10500
@@ -2385,12 +2328,12 @@ $EndComp
 $Comp
 L Mechanical:Housing N1
 U 1 1 604548EA
-P 6750 6850
-F 0 "N1" H 6903 6884 50  0000 L CNN
-F 1 "Housing" H 6903 6793 50  0000 L CNN
-F 2 "Symbol:KiCad-Logo2_5mm_Copper" H 6800 6900 50  0001 C CNN
-F 3 "~" H 6800 6900 50  0001 C CNN
-	1    6750 6850
+P 15400 9550
+F 0 "N1" H 15553 9584 50  0000 L CNN
+F 1 "Housing" H 15553 9493 50  0000 L CNN
+F 2 "Symbol:KiCad-Logo2_5mm_Copper" H 15450 9600 50  0001 C CNN
+F 3 "~" H 15450 9600 50  0001 C CNN
+	1    15400 9550
 	1    0    0    -1  
 $EndComp
 Text Label 6100 10500 0    50   ~ 0
@@ -2466,4 +2409,72 @@ F 3 "~" H 15000 8500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	15200 8250 15500 8250
+$Comp
+L Mechanical:Housing N2
+U 1 1 605033A1
+P 14650 9550
+F 0 "N2" H 14803 9584 50  0000 L CNN
+F 1 "Housing" H 14803 9493 50  0000 L CNN
+F 2 "0Pretty:FIT_logo_mini" H 14700 9600 50  0001 C CNN
+F 3 "~" H 14700 9600 50  0001 C CNN
+	1    14650 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L BOOTSwitch:MLL1200S S_PWR1
+U 1 1 604714A1
+P 9700 2250
+F 0 "S_PWR1" H 10300 2515 50  0000 C CNN
+F 1 "MLL1200S" H 10300 2424 50  0000 C CNN
+F 2 "vypinac:MLL1200S" H 10750 2350 50  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1437575-1&DocType=Customer+Drawing&DocLang=English&DocFormat=pdf&PartCntxt=1437575-1" H 10750 2250 50  0001 L CNN
+F 4 "TE CONNECTIVITY / ALCOSWITCH - MLL1200S - SLIDE SWITCH, SPDT, 0.3A, 4VDC, SMD" H 10750 2150 50  0001 L CNN "Description"
+F 5 "1.75" H 10750 2050 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 10750 1950 50  0001 L CNN "Manufacturer_Name"
+F 7 "MLL1200S" H 10750 1850 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "506-MLL1200S" H 10750 1750 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/MLL1200S/?qs=%252BHgkcFtPSlhaU4bDJZHWiQ%3D%3D" H 10750 1650 50  0001 L CNN "Mouser Price/Stock"
+F 10 "MLL1200S" H 10750 1550 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/mll1200s/te-connectivity" H 10750 1450 50  0001 L CNN "Arrow Price/Stock"
+	1    9700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L UBS5-3V3:LD3985M33R IC1
+U 1 1 6054DC0D
+P 5350 2950
+F 0 "IC1" H 6050 3215 50  0000 C CNN
+F 1 "LD3985M33R" H 6050 3124 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6600 3050 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00003395.pdf" H 6600 2950 50  0001 L CNN
+F 4 "LD3985M33R, Low Dropout Voltage Regulator, 0.55A, 3.3V +/-2%, 2.5 to 6Vin, 5-Pin SOT-23" H 6600 2850 50  0001 L CNN "Description"
+F 5 "1.45" H 6600 2750 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 6600 2650 50  0001 L CNN "Manufacturer_Name"
+F 7 "LD3985M33R" H 6600 2550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-LD3985M33R" H 6600 2450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LD3985M33R/?qs=22WmWNTp1rrPOccVv4HZ7A%3D%3D" H 6600 2350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "LD3985M33R" H 6600 2250 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/ld3985m33r/stmicroelectronics" H 6600 2150 50  0001 L CNN "Arrow Price/Stock"
+	1    5350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_svab:USBLC6-2SC6 IC2
+U 1 1 6020EDBD
+P 7500 1950
+F 0 "IC2" H 8150 1485 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 8150 1576 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8650 2050 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00050750.pdf" H 8650 1950 50  0001 L CNN
+F 4 "TVS Diode Array Uni-Directional USBLC6-2SC6 17V, SOT-23 6-Pin" H 8650 1850 50  0001 L CNN "Description"
+F 5 "1.45" H 8650 1750 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 8650 1650 50  0001 L CNN "Manufacturer_Name"
+F 7 "USBLC6-2SC6" H 8650 1550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-USBLC6-2SC6" H 8650 1450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/USBLC6-2SC6/?qs=po45yt2pPpu%2FhNIlwQdTlg%3D%3D" H 8650 1350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "USBLC6-2SC6" H 8650 1250 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/usblc6-2sc6/stmicroelectronics" H 8650 1150 50  0001 L CNN "Arrow Price/Stock"
+	1    7500 1950
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
