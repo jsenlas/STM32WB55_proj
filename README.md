@@ -19,6 +19,6 @@ v03 9.3.2021
 - posunute USB dalej, aby som vytvoril priestor a napravil tak dalsie chyby kde sa mi prekryvali suciastky
 
 ToDo:
-- doplnit "ohradu" z  GND vias okolo RF tras
-- vyplnit priestor s vias na GND
-- nepaci sa mi ako je poprepajane I2C (chaos) a USB (+ a - su prilis blizko pri sebe v USBLC6-2SC6)
+- [] vyplnit priestor s vias na GND
+- [] nepaci sa mi ako je poprepajane I2C (chaos) a USB (+ a - su prilis blizko pri sebe v USBLC6-2SC6)
+- [x] doplnit "ohradu" z  GND vias okolo RF tras - nie je miesto
